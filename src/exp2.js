@@ -48,7 +48,13 @@
                 //补全regex是字符串的情况，含义就是当前输入的前缀是否是regex，
 				//如果是则返回regex
 				//不是则返回null
-				throw "将该throw语句替换为你的代码：行号51";
+				//throw "将该throw语句替换为你的代码：行号51";
+                for (var i = 0, len = regex.length; i < len; ++i) {
+                    if (regex[i] != content[pos + i]) {
+                        return null;
+                    }
+                }
+                return regex;
             }else{
                 return startWith(regex, content.substr(pos));
             }
@@ -106,15 +112,48 @@
         var attrs = [];
         //此处分析该tag中的属性，
 		//注意该tag可能没有属性
-		throw "将该throw语句替换为你的代码：行号109";
+		//throw "将该throw语句替换为你的代码：行号109";
+        var tattr;
+        while (tattr = parseAttr()) {
+            attrs.push(tattr);
+        }
+        /*var attrname = null;
+        while (attrname = lexer.input(/[a-zA-Z0-9_-]+/)) {
+            if (lexer.input("=")) {
+                var attrvalue = lexer.input(/("[^"]*"|'[^']*+')/);
+                if (!attrvalue) {
+                    throw tagname + ' has attribute ' + attrname + ' and "=" but no value.';
+                }
+                attrs.push({name: attrname, value: attrvalue.substr(1, attrvalue.length - 2)});
+            } else {
+                attrs.push({name: attrname});
+            }
+        }*/
+
         var children=[]; 
 		if(lexer.lookAhead(">")){
 			//一个以">"结尾的节点，我们认为它拥有子节点
 			//此处为了简单起见，我们不处理HTML中某些特殊的节点，它们以">"结尾却无子节点
-			throw "将该throw语句替换为你的代码：行号113";
+			//throw "将该throw语句替换为你的代码：行号113";
+            lexer.input(">");
+            var flag = false;
+            while (!flag) {
+                if (lexer.input('</')) {
+                    var endtagname = lexer.input(/[a-zA-Z0-9]+/);
+                    if (tagname != endtagname) {
+                        throw 'tag head(' + tagname + ') and tail(' + endtagname + ') not match!';
+                    }
+                    assert(lexer.input('>'));
+                    flag = true;
+                } else {
+                    children.push(parseTag());
+                }
+            }
         }else if(lexer.lookAhead("/>")){
 			//一个以"/>"结尾的节点是没有子节点的。
-			throw "将该throw语句替换为你的代码：行号117";
+			//throw "将该throw语句替换为你的代码：行号117";
+            function 啥也不做哈哈哈(){};
+            啥也不做哈哈哈();
 		}
         return {type:"tag", name:tagname, attrs:attrs, children:children};
     }
@@ -154,7 +193,12 @@
 			//消耗一个等于号
             if(lexer.input("=")){
                 //在此处填写你的代码，它应该分析label="value"后面的"value"，并将它的值存在value变量中
-				throw "将该throw语句替换为你的代码：行号157";
+				//throw "将该throw语句替换为你的代码：行号157";
+                value = lexer.input(/"[^"]*"|'[^']*'/);
+                if (!value) {
+                    throw 'label has "=" but no value.';
+                }
+                value = value.substr(1, value.length - 2);
             }
 			var key=id.toLowerCase();
             return {type:"attr", key:key, value:value};
@@ -260,15 +304,29 @@ function dowork(str){
 			}
 			if(tag.name=="a"&&tag.attrs){
 				//如果是A标签，应该寻找它的href属性。
-				throw "将该throw语句替换为你的代码：行号263";
+				//throw "将该throw语句替换为你的代码：行号263";
+                for (var k in tag.attrs) {
+                    if (tag.attrs[k].key == 'href' && typeof tag.attrs[k].value == 'string') {
+                        hrefs.push(tag.attrs[k].value);
+                        break;
+                    }
+                }
 			}
 			if(tag.name=="base"){
 				//如果是base标签，应该寻找它的文本子节点，或者href属性。
 				if (tag.children) for(var i in tag.children){
-					throw "将该throw语句替换为你的代码：行号268";
+					//throw "将该throw语句替换为你的代码：行号268";
+                    if (tag.children[i].type == 'text') {
+                        baseHref = tag.children[i].content;
+                        break;
+                    }
 				}
 				if (tag.attrs) for(var k in tag.attrs){
-					throw "将该throw语句替换为你的代码：行号271";
+					//throw "将该throw语句替换为你的代码：行号271";
+                    if (tag.attrs[k].key == 'href' && typeof tag.attrs[k].value == 'string') {
+                        baseHref = tag.attrs[k].value;
+                        break;
+                    }
 				}
 			}
 			return hrefs;
@@ -285,9 +343,38 @@ function dowork(str){
 		}
 	};
 	var hrefs = parser.visit(r,null,findAvisitor);
+    var basedirminlen = /:\/\//.exec(baseHref) != null ? 3 : 1;
+    var basedirs = baseHref.split('/');
+    for (var i in hrefs) {
+        if (/:\/\//.exec(hrefs[i]) != null) {
+            continue;
+        }
+        var dirs = hrefs[i].split('/'), tdirs, j = 0;
+        if (dirs[0] == '') {
+            tdirs = basedirs.slice(0, basedirminlen);
+            j = 1;
+        } else {
+            tdirs = basedirs.slice();
+        }
+        for (var tlen = dirs.length; j < tlen; ++j) {
+            switch (dirs[j]) {
+                case '.':
+                    break;
+                case '..':
+                    if (tdirs.length > basedirminlen) {
+                        tdirs.pop();
+                    }
+                    break;
+                default:
+                    tdirs.push(dirs[j]);
+                    break;
+            }
+        }
+        hrefs[i] = tdirs.join('/');
+    }
 	//此时hrefs中是全部的href属性值，baseHref属性是文档的base，
 	//你应该将这两者结合，生成绝对路径的数组，存放在hrefs内
-	throw "将该throw语句替换为你的代码：行号290";
+	//throw "将该throw语句替换为你的代码：行号290";
 	return hrefs;
 }
 
