@@ -196,9 +196,21 @@
 				//throw "将该throw语句替换为你的代码：行号157";
                 value = lexer.input(/"[^"]*"|'[^']*'/);
                 if (!value) {
-                    throw 'label has "=" but no value.';
+                    value = '';
+                    while (!lexer.lookAhead(/[\s>]/)) {
+                        if (lexer.lookAhead('/>')) {
+                            break;
+                        }
+                        value += lexer.input('/') || '';
+                        var tvalue = lexer.input(/[\w_-]+/);
+                        if (!tvalue) {
+                            throw 'label has "=" but no value.';
+                        }
+                        value += tvalue;
+                    }
+                } else {
+                    value = value.substr(1, value.length - 2);
                 }
-                value = value.substr(1, value.length - 2);
             }
 			var key=id.toLowerCase();
             return {type:"attr", key:key, value:value};
@@ -343,10 +355,14 @@ function dowork(str){
 		}
 	};
 	var hrefs = parser.visit(r,null,findAvisitor);
-    var basedirminlen = /:\/\//.exec(baseHref) != null ? 3 : 1;
+    if (!baseHref) baseHref = 'http://foo.com/folder';
+    while (baseHref.length > 0 && baseHref[baseHref.length - 1] == '/') {
+        baseHref = baseHref.slice(0, baseHref.length - 1);
+    }
+    var basedirminlen = /:/.exec(baseHref) != null ? 3 : 1;
     var basedirs = baseHref.split('/');
     for (var i in hrefs) {
-        if (/:\/\//.exec(hrefs[i]) != null) {
+        if (/:/.exec(hrefs[i]) != null) {
             continue;
         }
         var dirs = hrefs[i].split('/'), tdirs, j = 0;
@@ -387,7 +403,7 @@ if (typeof window === 'undefined') {
     }
 }else{    
     document.close();
-    document.write("<h2>输入字符串</h2><textarea id='str'></textarea><p><input type='button' id='parse' value='分析' onclick='doparse();'></input></p><p id='result'></p>");
+    document.write("<h2>输入字符串</h2><textarea id='str'></textarea><p><input type='button' id='parse' value='分析' onclick='doparse();'/></p><p id='result'></p>");
     window.doparse = function(){
 		try{
 			var str = document.getElementById("str").value;
