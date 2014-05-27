@@ -1,0 +1,3378 @@
+<base>https://www.google.com.hk/search/qiankanglai/nb</base>
+<body class="srp tbo vsh" lang="zh-CN" marginheight="3" topmargin="3" id="gsr">
+    <div data-jiis="cc" id="cst">
+        <style>
+        .y.yp, .y>.filled, .y>.preload {
+            display:none
+        }
+        .y.yf, .y.ys, .yf>.filled, .yi>.filled, .yp>.preload {
+            display:block
+        }
+        .s2er {
+        }
+        .s2fp {
+        }
+        .s2fp-h {
+        }
+        .s2ml {
+        }
+        .s2ra {
+        }
+        .s2tb {
+        }
+        .s2tb-h {
+        }
+        .spch {
+        }
+        .spchc {
+        }
+        .spch {
+            background:#fff;
+            height:100%;
+            left:0;
+            opacity:0;
+            overflow:hidden;
+            position:fixed;
+            text-align:left;
+            top:0;
+            visibility:hidden;
+            width:100%;
+            z-index:10000;
+            transition:visibility 0s linear 0.218s, opacity 0.218s, background-color 0.218s
+        }
+        .s2fp.spch {
+            opacity:1;
+            visibility:visible;
+            transition-delay:0s
+        }
+        .s2tb-h.spch {
+            background:rgba(255, 255, 255, 0);
+            opacity:0;
+            visibility:hidden
+        }
+        .s2tb.spch {
+            background:rgba(255, 255, 255, 0);
+            opacity:1;
+            visibility:visible;
+            transition-delay:0s
+        }
+        .close-button {
+            color:#777;
+            cursor:pointer;
+            font-size:26px;
+            right:0;
+            height:11px;
+            line-height:15px;
+            margin:15px;
+            opacity:.6;
+            padding:0;
+            position:absolute;
+            top:0;
+            width:15px
+        }
+        .close-button:hover {
+            opacity:.8
+        }
+        .close-button:active {
+            opacity:1
+        }
+        .google-logo {
+            background:url(data:image/gif;base64,R0lGODlhxABEAMIGALGzsMPFwtHT0N/h3u3v7P3//P///////yH5BAEKAAcALAAAAADEAEQAAAP+WLrc/jDKSau9OJcBuveCJo5kaZ7oJHwsMKSwQsx0bN84M+zDygY5DaEXaH0CggEhyGwKWyGnhCAoGq+ewEvK7cpaW++C+lMuZUOrUXAWu20E8Lvg62grAzUrOu+X4ixhXYAebRYcV4J+ixaEHopOdQB8GpIgjJiNcl16lCKIj5miE44dkEF6pxqgqqOupS5ckp4kgK2uo7C3MKAAQClFhrjDX4FOpcK1ycTDuk56v8zScJtBvQDL09ojzkx6ALlEVgFIuxdU5EXkSdmD1RRDVepI7aW0c3lYWe2k30Z33Ijoq9ZtQj599yyZc9KL3YyDR/g5IKBGCw2IHxbq8Df+cFKDghAoguBhqYOwFotEdrhXQGVGC3UCLHN5CU8WMxgf8XgA0kGdhC3awPLjSKI/lgzU7CoZLYKaZNd81XvX4GmEkmcsNRVTtIK/W2qQMmAqwSrPFlsZ9FygdMK3X2/nONIICxuEiheO3g0VIWraYi8dgPr7UU7cN3owRAXn84NEtUagfqDw9ayxwoUqoC2w2U3DDHohT8ZAtsEReJ0xB046msLm1F4uX1hc9YNYy7LpnKYcdCJVR4TVdjpjxDOLxw6MhCmlkfUP5ytt5gbMd8EsCRABLigu5puI0rpXz+be8rnmPb6nd+I5a1lkMShXkf/WnIFy6r4sfKPVE73+8JtlQeHFUE/0xtl0+gm4QXwUKJSeeKVEAxEbDcLGkIGgybFWBSVFAQtyDqpWXXkRxdQcbV1gJUJlsNwGgV/4eUTBNbiN+OEMItRVH0889OijEuGJd0FJL8AS3BSpkSeBJH+B9GEJHNVS0hoKdPiJhkqeo2CQNQWY2YM2UpXBYju2xBSVCsAo33EksjDCO+9JYFtIVFmowRVC4NiAijEyNiaD993JpnV2jtUlmKbUNugIU7oIE4YHIjijeQX4c2QEDLJV6ILRRdCTlbVcgVyFi1a6KXayoYiBPQ8wJQgZiSI5XV2jQjClXSaUJOKXQ7ppn5gGlarDFeQIW2Osv1L+OgJHl3KYqQKh5SUkeI9mYRBHQtKJ4JRlinZqta2NEWcFwD0QaIK8wtOmB5pImsgfxNbamK97fltvuuJCiuqIhzzrKbCLxUJCwAJX4i+0W8qK7Ly7uXZor8YeW/C9CU8h8T4G0+tAZQpP3Kq9pna6ZkSoSYrwu55SyBO2UpF2sKb+1YicX9m45Ki2+iKan1P6WHSRFRIR7IvKIeXUQbBgGJJdrTStZAisLUN5hVjMJgEkxR3ZMeqtPwjgtdeWsgPuDz/Iu4DR/3RrLrEvdnRK01iUiXZH5QxcRdonoPMP0TnuIE/PPNEguOCk3I33H+L8gIRDN+iZQw2Is4yFTI+RE77N5VO8xXiVbGPuOVfQ3FKXjJ+XzgRz5EZp+uqNR3wVsKzHXiC+zjYs++0aQLOs7bj3XjK/Wlrr+/AquH6eHcQnv5djJISl/PPQLZyhSdBXf5gI4VaffFRmA6a29pdniW6z4Mc+pbw+kF9+7Bw5qpL667NP7NVqTRh/+ULbYWn397PO9Rr865/s4hE2+rkiAQA7) no-repeat center;
+            background-size:98px 34px;
+            float:right;
+            height:34px;
+            left:255px;
+            opacity:0;
+            pointer-events:none;
+            position:relative;
+            top:6px;
+            width:98px;
+            transition:opacity .5s ease-in, left .5s ease-in
+        }
+        .s2tb .google-logo {
+            opacity:1;
+            left:270px;
+            transition:opacity .5s ease-out, left .5s ease-out
+        }
+        .spchc {
+            display:block;
+            height:27px;
+            position:absolute;
+            pointer-events:none
+        }
+        .s2fp .spchc, .s2fp-h .spchc {
+            margin:auto;
+            margin-top:312px;
+            max-width:572px;
+            min-width:534px;
+            padding:0 223px;
+            position:relative;
+            top:0
+        }
+        .s2tb .spchc, .s2tb-h .spchc {
+            background:#fff;
+            box-shadow:0 2px 6px rgba(0, 0, 0, 0.2);
+            margin:0;
+            min-width:100%;
+            overflow:hidden;
+            padding:51px 0 65px 126px;
+            position:absolute
+        }
+        ._sl {
+            height:100%;
+            opacity:.1;
+            pointer-events:none;
+            width:100%;
+            transition:opacity .318s ease-in
+        }
+        .s2tb-h ._sl, .s2tb ._sl {
+            height:100%;
+            width:572px;
+            transition:opacity .318s ease-in
+        }
+        .s2ml ._sl, .s2ra ._sl, .s2er ._sl {
+            opacity:1;
+            transition:opacity 0s
+        }
+        .button {
+            background-color:#fff;
+            border:1px solid #eee;
+            border-radius:100%;
+            bottom:0;
+            box-shadow:0 2px 5px rgba(0, 0, 0, .1);
+            cursor:pointer;
+            display:inline-block;
+            left:0;
+            opacity:0;
+            pointer-events:none;
+            position:absolute;
+            right:0;
+            top:0;
+            transition:background-color 0.218s, border 0.218s, box-shadow 0.218s
+        }
+        .s2tb-h .button {
+            left:-83px;
+            opacity:0;
+            pointer-events:none;
+            position:absolute;
+            top:-83px;
+            transition-delay:0
+        }
+        .s2fp-h .button {
+            opacity:0;
+            pointer-events:none;
+            position:absolute;
+            transition-delay:0
+        }
+        .s2fp .button, .s2tb .button {
+            opacity:1;
+            pointer-events:auto;
+            position:absolute;
+            -webkit-transform:scale(1);
+            transition-delay:0
+        }
+        .s2ra .button {
+            background-color:#ff4444;
+            border:0;
+            box-shadow:none
+        }
+        ._Du {
+            background-color:#dbdbdb;
+            border-radius:100%;
+            display:inline-block;
+            height:301px;
+            left:-69px;
+            opacity:1;
+            pointer-events:none;
+            position:absolute;
+            top:-69px;
+            width:301px;
+            -webkit-transform:scale(.01);
+            transition:opacity 0.218s
+        }
+        .s2tb-h ._Du, .s2tb ._Du {
+            height:151px;
+            left:-28px;
+            top:-28px;
+            width:151px
+        }
+        ._vi {
+            float:right;
+            pointer-events:none;
+            position:relative;
+            transition:-webkit-transform 0.218s, opacity 0.218s ease-in
+        }
+        .s2fp-h ._vi, .s2fp ._vi {
+            height:165px;
+            right:-70px;
+            top:-70px;
+            width:165px
+        }
+        .s2fp-h ._vi, .s2tb-h ._vi {
+            -webkit-transform:scale(.1)
+        }
+        .s2fp ._vi, .s2tb ._vi {
+            -webkit-transform:scale(1)
+        }
+        .s2tb-h ._vi, .s2tb ._vi {
+            height:95px;
+            right:-31px;
+            top:-27px;
+            width:95px
+        }
+        .s2ra .button:active {
+            background-color:#cd0000
+        }
+        .button:active {
+            background-color:#eee
+        }
+        ._Av {
+            height:87px;
+            left:43px;
+            pointer-events:none;
+            position:absolute;
+            top:47px;
+            width:42px;
+            -webkit-transform:scale(1)
+        }
+        .s2tb-h ._Av, .s2tb ._Av {
+            left:17px;
+            top:7px;
+            -webkit-transform:scale(.53)
+        }
+        ._pw {
+            background-color:#999;
+            border-radius:30px;
+            height:46px;
+            left:25px;
+            pointer-events:none;
+            position:absolute;
+            width:24px
+        }
+        ._AW {
+            bottom:0;
+            height:53px;
+            left:11px;
+            overflow:hidden;
+            pointer-events:none;
+            position:absolute;
+            width:52px
+        }
+        ._Vw {
+            background-color:#999;
+            bottom:14px;
+            height:14px;
+            left:22px;
+            pointer-events:none;
+            position:absolute;
+            width:9px;
+            z-index:1
+        }
+        ._Jw {
+            border:7px solid #999;
+            border-radius:28px;
+            bottom:27px;
+            height:57px;
+            pointer-events:none;
+            position:absolute;
+            width:38px;
+            z-index:0
+        }
+        .s2ml ._pw, .s2ml ._Vw {
+            background-color:#f44
+        }
+        .s2ml ._Jw {
+            border-color:#f44
+        }
+        .s2ra ._pw, .s2ra ._Vw {
+            background-color:#fff
+        }
+        .s2ra ._Jw {
+            border-color:#fff
+        }
+        .spcht {
+        }
+        .spchta {
+        }
+        .spch-2l {
+        }
+        .spch-3l {
+        }
+        .spch-4l {
+        }
+        .spch-5l {
+        }
+        ._wo {
+            pointer-events:none
+        }
+        .s2fp-h ._wo, .s2fp ._wo {
+            position:absolute
+        }
+        .s2tb-h ._wo, .s2tb ._wo {
+            position:relative
+        }
+        .spcht {
+            font-weight:normal;
+            line-height:1.2;
+            opacity:0;
+            pointer-events:none;
+            position:absolute;
+            text-align:left;
+            -webkit-font-smoothing:antialiased;
+            transition:opacity .1s ease-in, margin-left .5s ease-in, top 0s linear 0.218s
+        }
+        .s2fp-h .spcht {
+            margin-left:44px
+        }
+        .s2tb-h .spcht {
+            margin-left:32px
+        }
+        .s2fp-h .spcht, .s2fp .spcht {
+            font-size:32px;
+            left:-44px;
+            top:-.2em;
+            width:460px
+        }
+        .s2tb-h .spcht, .s2tb .spcht {
+            font-size:27px;
+            left:7px;
+            top:.2em;
+            width:490px
+        }
+        .s2fp .spcht, .s2tb .spcht {
+            margin-left:0;
+            opacity:1;
+            transition:opacity .5s ease-out, margin-left .5s ease-out
+        }
+        .spchta {
+            color:#1155cc;
+            cursor:pointer;
+            font-size:18px;
+            font-weight:500;
+            pointer-events:auto;
+            text-decoration:underline
+        }
+        .spch-2l.spcht, .spch-3l.spcht, .spch-4l.spcht {
+            transition:top 0.218s ease-out
+        }
+        .spch-2l.spcht {
+            top:-.6em
+        }
+        .spch-3l.spcht {
+            top:-1.3em
+        }
+        .spch-4l.spcht {
+            top:-1.7em
+        }
+        .s2fp .spch-5l.spcht {
+            top:-2.5em
+        }
+        .s2tb .spch-5l.spcht {
+            font-size:24px;
+            top:-1.7em;
+            transition:font-size 0.218s ease-out
+        }
+        .s2wfp {
+        }
+        ._SC {
+            margin-top:-100px;
+            opacity:0;
+            pointer-events:none;
+            position:absolute;
+            width:500px;
+            transition:opacity 0.218s ease-in, margin-top .4s ease-in
+        }
+        .s2wfp ._SC {
+            margin-top:-300px;
+            opacity:1;
+            transition:opacity .5s ease-out 0.218s, margin-top 0.218s ease-out 0.218s
+        }
+        ._TC {
+            box-shadow:0 1px 0px #4285F4;
+            height:80px;
+            left:0;
+            margin:0;
+            opacity:0;
+            pointer-events:none;
+            position:fixed;
+            right:0;
+            top:-80px;
+            transition:opacity 0.218s, box-shadow 0.218s
+        }
+        .s2wfp ._TC {
+            box-shadow:0 1px 80px #4285F4;
+            opacity:1;
+            pointer-events:none;
+            -webkit-animation:allow-alert .75s 0 infinite;
+            -webkit-animation-direction:alternate;
+            -webkit-animation-timing-function:ease-out;
+            transition:opacity 0.218s, box-shadow 0.218s
+        }
+        @-webkit-keyframes allow-alert {
+            from {
+                opacity:1;
+            }
+            to {
+                opacity:.35;
+            }
+        }
+        ._Od {
+            font-size:13px;
+        }
+        .kv, .slp {
+            display:block;
+        }
+        .f, .f a:link {
+            color:#808080
+        }
+        .a, cite, cite a:link, cite a:visited, .cite, .cite:link, #_cH>i, .bc a:link {
+            color:#006621;
+            font-style:normal
+        }
+        a.fl:link, .fl a, .flt, a.flt, .gl a:link, a.mblink, .mblink b {
+            color:#1a0dab
+        }
+        #resultStats {
+            color:#808080
+        }
+        .osl {
+            margin-top:0px
+        }
+        #ires .kv {
+            height:17px;
+            line-height:16px
+        }
+        #rcnt a:hover, #brs a:hover, #nycp a:hover {
+            text-decoration:underline !important
+        }
+        #rcnt .ab_dropdownitem a:hover, #rcnt[role=button]:hover, #rcnt .kno-fb-ctx>a:hover, #nycp a.ab_button:hover, #rcnt a.kpbb:hover {
+            text-decoration:none !important
+        }
+        ._ho, ._ho a {
+            font-size:18px;
+            line-height:18px
+        }
+        .rc {
+            position:relative
+        }
+        .gl:visited {
+            color:#666
+        }
+        .rc .s {
+            line-height:18px
+        }
+        .action-menu, .action-menu-button, .action-menu-item, .action-menu-panel, .action-menu-toggled-item, .selected {
+        }
+        ._cl, ._cl:hover, ._cl.selected, ._cl.selected:hover {
+            background-color:white;
+            background-image:none;
+            border:0;
+            border-radius:0;
+            box-shadow:0 0 0 0;
+            cursor:pointer;
+            filter:none;
+            height:12px;
+            min-width:0;
+            padding:0;
+            transition:none;
+            -webkit-user-select:none;
+            width:13px
+        }
+        .action-menu .mn-dwn-arw {
+            border-color:#006621 transparent;
+            margin-top:-4px;
+            margin-left:3px;
+            left:0;
+        }
+        .action-menu:hover .mn-dwn-arw {
+            border-color:#00591E transparent
+        }
+        .action-menu {
+            display:inline;
+            margin:0 3px;
+            position:relative;
+            -webkit-user-select:none
+        }
+        .action-menu-panel {
+            left:0;
+            padding:0;
+            right:auto;
+            top:12px;
+            visibility:hidden
+        }
+        .action-menu-item, .action-menu-toggled-item {
+            cursor:pointer;
+            -webkit-user-select:none
+        }
+        .action-menu-item:hover {
+            background-color:#eee
+        }
+        .action-menu-button, .action-menu-item a.fl, .action-menu-toggled-item div {
+            color:#333;
+            display:block;
+            padding:7px 18px;
+            text-decoration:none;
+            outline:0
+        }
+        ._AV {
+            display:block;
+            line-height:20px;
+            margin-top:4px;
+            padding:0 90px 0 38px;
+            position:relative;
+            white-space:nowrap
+        }
+        ._BV {
+            position:absolute;
+            right:0;
+            top:1px
+        }
+        ._CV {
+            height:28px;
+            left:0;
+            margin:4px 10px 0 0;
+            position:absolute;
+            top:0
+        }
+        ._DV {
+            display:inline-block;
+            max-width:100%;
+            overflow:hidden
+        }
+        ._EV {
+            color:#222;
+            font-weight:bold;
+            overflow:hidden;
+            text-overflow:ellipsis
+        }
+        ._O2 {
+            margin-top:4px
+        }
+        .authorship_link:visited {
+            color:#666
+        }
+        ._yV {
+            color:#666;
+            display:table;
+            white-space:nowrap;
+            margin:5px 0
+        }
+        ._P2 {
+            display:table-cell;
+            padding-left:15px;
+            vertical-align:top
+        }
+        ._Q2 {
+            display:table-cell
+        }
+        ._zV {
+            display:table-row;
+            vertical-align:top
+        }
+        ._R2 {
+            display:table-caption;
+            caption-side:bottom
+        }
+        ._xV {
+            color:#999
+        }
+        ._vo, ._vo a.fl {
+            color:#808080;
+        }
+        ._zE {
+            position:absolute
+        }
+        ._Jj {
+            background-color:#fff;
+            float:left;
+            overflow:hidden;
+            margin-top:4px;
+            position:relative
+        }
+        ._S2 {
+            background-color:#000
+        }
+        ._CE {
+            border:none;
+            bottom:0;
+            font-weight:bold;
+            position:absolute;
+            left:0;
+            text-align:right;
+            text-decoration:none
+        }
+        ._ms {
+            bottom:0;
+            font-size:11px;
+            font-weight:bold;
+            padding:1px 3px;
+            position:absolute;
+            right:0;
+            text-align:right;
+            text-decoration:none
+        }
+        ._AE {
+            background-color:#000;
+            opacity:.7;
+            -webkit-opacity:.7
+        }
+        ._BE {
+            color:#fff
+        }
+        .bc {
+        }
+        ._ns a.fl {
+            font-size:13px
+        }
+        .lu_dis {
+            bottom:-20px;
+            position:absolute;
+            right:20px
+        }
+        .lu_dis a {
+            color:#878787 !important;
+            font-size:11px !important;
+            font-weight:normal !important
+        }
+        .lu_dis a:hover {
+            text-decoration:underline
+        }
+        #luibli {
+            display:inline-block;
+            margin-right:1px
+        }
+        #luibr {
+            float:right
+        }
+        #luibbri {
+            margin-top:1px
+        }
+        #luib .thumb {
+            position:relative
+        }
+        #luib .thumb .cptn {
+            background:rgb(0, 0, 0);
+            background:rgba(0, 0, 0, 0.6);
+            bottom:0;
+            color:#fff;
+            font-size:larger;
+            padding:5px 10px;
+            position:absolute;
+            right:0
+        }
+        .lukpm {
+            line-height:0;
+            margin:0 -2px -2px 0;
+            padding-top:20px
+        }
+        .lukpm-l {
+            display:inline-block;
+            line-height:normal;
+            position:relative
+        }
+        .lukpm-i {
+            background:no-repeat center;
+            background-size:cover;
+            display:block;
+            height:96px;
+            margin:0 2px 2px 0
+        }
+        .lukpm-i:after {
+            background:-webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .6));
+            background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .6));
+            bottom:2px;
+            content:"";
+            left:0;
+            position:absolute;
+            right:2px;
+            top:50%
+        }
+        .lukpm-c {
+            bottom:6px;
+            color:#FFF;
+            font-size:12px;
+            font-weight:bold;
+            left:9px;
+            position:absolute;
+            right:9px
+        }
+        #annot .so {
+            color:#222;
+            display:table-cell;
+            vertical-align:middle;
+            width:inherit
+        }
+        #annot .fl {
+            color:#222 !important
+        }
+        #annot .soha {
+            color:#1a0dab !important
+        }
+        .intrjus .so {
+            margin:0
+        }
+        .luzb {
+            color:white;
+            display:inline-block;
+            font-size:10px;
+            font-weight:bold;
+            height:30px;
+            line-height:30px;
+            text-align:center;
+            padding-left:8px;
+            padding-right:8px;
+            min-width:33px
+        }
+        .luzab {
+            background-color:transparent;
+            border-bottom:1px solid #C7C7C7;
+            display:inline-block;
+            height:29px;
+            margin:0 0 0 1px;
+            min-width:50px
+        }
+        .luzat {
+            display:inline-block;
+            font-size:10px;
+            margin-top:-2px;
+            padding-left:8px;
+            padding-right:8px;
+            vertical-align:top
+        }
+        .luzar {
+            display:inline-block;
+            font-size:15px
+        }
+        .luzbp {
+            background-color:transparent;
+            border-left:1px solid #C7C7C7;
+            display:inline-block;
+            height:23px;
+            margin-bottom:1px;
+            vertical-align:bottom
+        }
+        .luzac {
+            display:inline-block;
+            height:30px;
+            line-height:13px;
+            text-align:center;
+            vertical-align:bottom
+        }
+        .vk_h {
+        }
+        .vk_c a {
+            text-decoration:none
+        }
+        .vk_gn {
+            color:#3d9400 !important
+        }
+        .vk_rd {
+            color:#dd4b39 !important
+        }
+        .vk_dgy {
+            color:#545454 !important
+        }
+        .vk_gy {
+            color:#878787 !important
+        }
+        .vk_lgy {
+            color:#bababa !important
+        }
+        .vk_blgy {
+            border-color:#bababa
+        }
+        .vk_bk {
+            color:#212121 !important
+        }
+        .vk_fl a {
+            color:#878787
+        }
+        .vk_fl a:hover {
+            color:#12c
+        }
+        .vk_ans {
+            font-weight:lighter !important;
+            margin-bottom:5px
+        }
+        .vk_ans {
+            font-size:xx-large !important
+        }
+        .vk_ans.vk_long {
+            font-size:20px !important
+        }
+        .vk_h {
+            font-weight:lighter !important
+        }
+        .vk_h {
+            font-size:x-large !important
+        }
+        .vk_sh, .vk_hs, .vk_med {
+            font-weight:lighter !important
+        }
+        .vk_sh {
+            font-size:medium !important
+        }
+        .vk_txt {
+            font-weight:lighter !important
+        }
+        .vk_txt {
+            font-size:small !important
+        }
+        .vk_txt, .vk_c, .vk_cxp {
+            line-height:1.8
+        }
+        .vk_lt {
+            font-weight:lighter !important
+        }
+        .vk_cdns {
+            font-size:13px !important
+        }
+        .vk_bd {
+            font-weight:bold !important
+        }
+        .vk_c, .vk_cxp, #rhs .vk_rhsc {
+            -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.2);
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.2)
+        }
+        #rhs .vk_rhsc {
+            border:none;
+            margin-left:2px
+        }
+        .vk_c, .vk_cxp {
+            background-color:#fff;
+            position:relative
+        }
+        .vkc_np {
+            margin-left:-20px;
+            margin-right:-20px
+        }
+        .vk_pl, .ts .vk_pl {
+            padding-left:20px
+        }
+        .vk_pr, .ts .vk_pr {
+            padding-right:20px
+        }
+        .vk_pt, .ts .vk_pt {
+            padding-top:20px
+        }
+        ._kW {
+            padding-bottom:20px
+        }
+        li.vk_c, .vk_c, .vk_cxp {
+            margin-left:-8px;
+            margin-right:-35px
+        }
+        li.vk_c, .vk_c, .vk_cxp, .vk_ic {
+            padding:20px 20px 24px
+        }
+        .vk_c .vk_c, .vk_c .vk_cxp {
+            -webkit-border-radius:0;
+            -webkit-box-shadow:none;
+            background-color:transparent;
+            border:0;
+            box-shadow:none;
+            margin:0;
+            padding:0;
+            position:static
+        }
+        .vk_cxp {
+            padding-top:30px;
+            padding-bottom:34px
+        }
+        .vk_c_cxp {
+            margin-top:10px;
+            margin-bottom:10px
+        }
+        .vk_gbb {
+            border-bottom:1px solid #eee
+        }
+        .vk_gbr {
+            border-right:1px solid #eee
+        }
+        .vk_gbt {
+            border-top:1px solid #eee
+        }
+        .vk_cf {
+            margin:0 -20px;
+            padding:16px 20px
+        }
+        .vk_cf a, .vk_cf a:link, a.vk_cf, a.vk_cf:link {
+            color:#878787
+        }
+        .vk_cf a:hover, a.vk_cf:hover {
+            color:#12c
+        }
+        .vk_slic {
+            display:inline-block;
+            margin-top:-3px;
+            margin-right:16px;
+            position:relative;
+            height:24px;
+            width:24px;
+            vertical-align:middle
+        }
+        .vk_sli, .vk_slih {
+            border:none;
+            position:absolute;
+            top:0;
+            left:0;
+            height:24px;
+            width:24px
+        }
+        a:hover .vk_sli, .vk_slih {
+            display:none
+        }
+        a:hover .vk_slih, .vk_sli {
+            display:inline-block
+        }
+        .vk_cba {
+            padding:10px;
+            margin-top:10px;
+            margin-bottom:-10px;
+            font-size:14px !important
+        }
+        .vk_spc {
+            height:16px;
+            width:100%
+        }
+        .vk_ra {
+            -webkit-transform:rotate(90deg)
+        }
+        .vk_arc {
+            border-top:1px solid #ebebeb;
+            cursor:pointer;
+            height:0px;
+            margin-bottom:-23px;
+            overflow:hidden;
+            padding:20px 0;
+            text-align:center
+        }
+        .vk_ard {
+            top:-11px
+        }
+        .vk_aru {
+            bottom:-6px
+        }
+        .vk_ard, .vk_aru {
+            background-color:#e5e5e5;
+            margin-left:auto;
+            margin-right:auto;
+            position:relative
+        }
+        .vk_ard, .vk_aru {
+            height:6px;
+            width:64px
+        }
+        .vk_ard:after, .vk_ard:before, .vk_aru:after, .vk_aru:before {
+            content:' ';
+            height:0;
+            left:0;
+            position:absolute;
+            width:0
+        }
+        .vk_ard:after, .vk_ard:before, .vk_aru:after, .vk_aru:before {
+            border-left:32px solid rgba(229, 229, 229, 0);
+            border-right:32px solid rgba(229, 229, 229, 0)
+        }
+        .vk_ard:before {
+            border-top:16px solid #e5e5e5;
+            top:6px
+        }
+        .vk_aru:before {
+            border-bottom:16px solid #e5e5e5;
+            bottom:6px
+        }
+        .vk_ard:after {
+            top:0
+        }
+        .vk_ard:after {
+            border-top:16px solid #fff
+        }
+        .vk_aru:after {
+            bottom:0
+        }
+        .vk_aru:after {
+            border-bottom:16px solid #fff
+        }
+        .vk_bk.vk_ard, .vk_bk.vk_aru {
+            background-color:#212121
+        }
+        .vk_bk.vk_ard:before {
+            border-top-color:#212121
+        }
+        .vk_bk.vk_aru:before {
+            border-bottom-color:#212121
+        }
+        .vk_ftr {
+            font-size:11px !important;
+            padding:6px 8px
+        }
+        #center_col .vk_ftr {
+            margin:0 -35px 0 -8px;
+            padding:6px 20px 0
+        }
+        #rhs .vk_ftr {
+            margin-left:2px;
+            padding-bottom:5px;
+            padding-top:5px
+        }
+        .vk_ftr, .vk_ftr a {
+            color:#878787 !important;
+            text-decoration:none
+        }
+        .vk_ftr a:hover {
+            text-decoration:underline
+        }
+        .leg_calc.vk_c {
+            padding-top:24px;
+            padding-bottom:20px
+        }
+        .leg_calc .vk_ans {
+            margin-bottom:0
+        }
+        .leg_calc .vk_gy {
+            margin-bottom:5px
+        }
+        .vk_tblspacer {
+            background-color:#ebebeb;
+            height:1px
+        }
+        .vk_tbl {
+            border-collapse:collapse
+        }
+        .vk_tbl td {
+            padding:0
+        }
+        .xpdclps, .xpdxpnd {
+            overflow:hidden
+        }
+        .xpdclps, .xpdxpnd {
+            -webkit-transition:max-height 0.3s
+        }
+        .xpdxpnd, .xpdopen .xpdclps, .xpdopen .xpdxpnd.xpdnoxpnd {
+            max-height:0
+        }
+        .xpdopen .xpdxpnd {
+            max-height:none
+        }
+        .xpdopen .xpdbox .xpdxpnd, .xpdopen .xpdbox.xpdopen .xpdclps {
+            max-height:0
+        }
+        .xpdopen .xpdbox.xpdopen .xpdxpnd, .xpdopen .xpdbox .xpdclps {
+            max-height:none
+        }
+        .xpdclose .xpdxpnd-nt, .xpdopen .xpdclps-nt {
+            display:none
+        }
+        #tads h3, #tadsb h3, #mbEnd h3 {
+            font-size:18px !important;
+        }
+        #mbEnd h2 {
+            color:#767676
+        }
+        #center_col ._Ec {
+            color:#545454
+        }
+        #rhs ._Ec {
+            color:#545454
+        }
+        .ads-ad {
+            line-height:18px
+        }
+        ._Ec a {
+            text-decoration:none
+        }
+        ._Ec a:hover {
+            text-decoration:underline
+        }
+        #center_col ._Ec a {
+            color:#1a0dab
+        }
+        #center_col ._Ec a:visited, #center_col ._Ec a._Ks, #rhs ._Ec a:visited, #rhs ._Ec a._Ks {
+            color:#609
+        }
+        #center_col ._Ec a:active, #rhs ._Ec a:active {
+            color:#dd4b39
+        }
+        #center_col ._Ec ._pe, #center_col ._Ec ._pe a, #rhs ._Ec ._pe, #rhs ._Ec ._pe a {
+            color:#808080
+        }
+        ._eG>li {
+            display:inline;
+            margin:0;
+            padding:0
+        }
+        ._eG>li+li:before {
+            content:' - '
+        }
+        ._qc {
+            display:inline-block;
+            padding:0 12px;
+            text-align:center;
+            white-space:nowrap;
+            border:1px solid #dcdcdc;
+            border-radius:2px;
+            background:#f5f5f5;
+            background-image:-webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#f1f1f1));
+            background-image:-webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+            background-image:linear-gradient(#f5f5f5, #f1f1f1);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f5f5', EndColorStr='#f1f1f1')
+        }
+        ._qc:active, ._qc:hover {
+            border-color:#c6c6c6;
+            background:#f8f8f8;
+            background-image:-webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f1f1f1));
+            background-image:-webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+            background-image:linear-gradient(#f8f8f8, #f1f1f1);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#f8f8f8', EndColorStr='#f1f1f1')
+        }
+        ._qc:hover {
+            box-shadow:0px 1px 1px rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow:0px 1px 1px rgba(0, 0, 0, 0.1)
+        }
+        ._qc:active, ._qc:hover:active, ._qc._nx {
+            box-shadow:inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow:inset 0px 1px 2px rgba(0, 0, 0, 0.1)
+        }
+        ._QW {
+            line-height:27px
+        }
+        ._qc._RW {
+            line-height:17px
+        }
+        ._Do {
+            padding:0 2px;
+            line-height:31px;
+            min-width:66px
+        }
+        ._qc, ._ug {
+            color:#333;
+            font-size:11px;
+            font-weight:bold
+        }
+        ._ug {
+            opacity:1
+        }
+        #rhs ._qc {
+            background-color:#f5f5f5;
+            background-image:-webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#f1f1f1));
+            background-image:-webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+            background-image:linear-gradient(#f5f5f5, #f1f1f1);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f5f5', EndColorStr='#f1f1f1');
+            border-color:#dcdcdc
+        }
+        #rhs ._qc:hover {
+            background-color:#f8f8f8;
+            background-image:-webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f1f1f1));
+            background-image:-webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+            background-image:linear-gradient(#f8f8f8, #f1f1f1);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#f8f8f8', EndColorStr='#f1f1f1');
+            border-color:#c6c6c6;
+            color:#222
+        }
+        #rhs ._qc:active {
+            background-color:#f6f6f6;
+            background-image:-webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#f1f1f1));
+            background-image:-webkit-linear-gradient(top, #f6f6f6, #f1f1f1);
+            background-image:linear-gradient(#f6f6f6, #f1f1f1);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#f6f6f6', EndColorStr='#f1f1f1')
+        }
+        ._qc._nx, ._qc._nx ._ug, ._qc:active, ._qc:hover, ._qc:active ._ug, ._qc:hover ._ug {
+            color:#212121
+        }
+        ._xs {
+            display:inline-block;
+            position:relative;
+            vertical-align:middle;
+            width:18px;
+            height:18px;
+            background-repeat:no-repeat;
+            margin:0 -2px
+        }
+        ._xs+._ug {
+            margin-left:8px;
+            margin-right:2px
+        }
+        ._vg {
+            background-color:#fff;
+            border:1px solid #d9d9d9;
+            border-top-color:#c0c0c0;
+            box-sizing:content-box;
+            -webkit-box-sizing:content-box;
+            color:#545454;
+            display:inline-block;
+            height:19px;
+            line-height:19px;
+            margin:0;
+            font-size:inherit
+        }
+        ._vg:hover {
+            border-color:#b9b9b9;
+            border-top-color:#a0a0a0;
+            box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.1)
+        }
+        ._vg:focus {
+            border-color:#4d90fe;
+            box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.3);
+            -webkit-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.3);
+            outline:none
+        }
+        ._vg.ads-text-field-hint {
+            color:#999
+        }
+        #center_col ._CF {
+            margin-left:-8px;
+            margin-right:-8px
+        }
+        ._UF {
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap
+        }
+        #tads {
+            margin-top:-7px !important;
+        }
+        #tads {
+            padding-bottom:2px !important;
+            margin-bottom:6px !important;
+        }
+        #tadsb {
+            padding-top:0 !important;
+            padding-bottom:9px !important;
+            margin-top:-10px !important;
+            margin-bottom:16px !important
+        }
+        ._Dg, .commercial-unit .wtali {
+            background:url(/images/nav_logo193_hr.png) no-repeat 0 -106px !important;
+            left:1px !important;
+            top:3px !important;
+            background-size:167px !important
+        }
+        #center_col ._Wi>b, #center_col ._Wi span b {
+            color:#444
+        }
+        #center_col ._Wi {
+            color:#666;
+            font-weight:normal;
+            font-size:13px;
+            margin:12px -17px 0 0;
+            padding:0
+        }
+        ._Wi span+span {
+            margin-left:3px
+        }
+        #rhs ._Wi {
+            font-size:13px;
+            margin:0 0 -4px;
+            padding:0 0 4px;
+            text-align:left
+        }
+        #center_col ._Wi {
+            float:right;
+            z-index:2;
+            position:relative
+        }
+        .wtaal, .wtalb, .wtalbal, .wtalbar, .wtall, .wtalm {
+        }
+        a.wtall, .f a.wtall, .f a.wtaal, .f a.wtalm {
+            color:#12C
+        }
+        a.wtaal {
+            white-space:normal
+        }
+        .wtalbal, .wtalbar {
+            background:url(/images/nav_logo193.png) no-repeat
+        }
+        .wtalb {
+            background-color:#fff;
+            box-shadow:0 4px 16px rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow:0 4px 16px rgba(0, 0, 0, 0.2);
+            display:block;
+            padding:16px;
+            position:absolute;
+            visibility:hidden;
+            z-index:120;
+            outline:1px solid #ccc;
+        }
+        .wtalbal {
+            background-position:0 -212px
+        }
+        .wtalbar {
+            background-position:-50px -212px
+        }
+        .wtalbal, .wtalbar {
+            height:11px;
+            position:absolute;
+            top:-11px;
+            width:17px
+        }
+        .wtalbal {
+            right:13px;
+        }
+        .wtalbar {
+            right:0px;
+        }
+        .kno-fb-ctx {
+        }
+        .kno-fb-link {
+        }
+        ._nj {
+            color:#1a0dab !important
+        }
+        .kno-sh {
+            color:#222;
+            font-size:18px;
+            position:relative
+        }
+        .krable {
+            display:none
+        }
+        .kno-fb-on span.krable {
+            display:inline
+        }
+        .kno-fb-on div.krable {
+            display:block
+        }
+        .kno-fb-on td.krable {
+            display:table-cell
+        }
+        .kno-fb-on .kno-fb-ctx a.fl {
+            color:#222
+        }
+        .kno-fb-ctx a {
+            text-decoration:none
+        }
+        .kno-fb-link {
+            font-size:small;
+            font-weight:bold;
+            margin-right:6px
+        }
+        a.kno-fb-link {
+            text-decoration:none
+        }
+        span.kno-fb-link {
+            color:#777
+        }
+        ._tc .rc {
+            padding-top:11px
+        }
+        .kno-ecr-pt {
+        }
+        .kno-ecr-pt {
+            color:#000;
+            font-size:30px;
+            font-weight:normal
+        }
+        .kno-fb-hover, .kno-fb-hover .kno-sh {
+            background-color:#f0f0f0;
+            opacity:0.8;
+        }
+        a.kno-fb-link:hover {
+            text-decoration:underline
+        }
+        ._eg {
+            clear:both;
+            margin-top:24px
+        }
+        #ss-box {
+            background:#fff;
+            border:1px solid;
+            border-color:#c9d7f1 #36c #36c #a2bae7;
+            left:0;
+            margin-top:.1em;
+            position:absolute;
+            visibility:hidden;
+            z-index:103
+        }
+        #ss-box a {
+            display:block;
+            padding:.2em .31em;
+            text-decoration:none
+        }
+        #ss-box a:hover {
+            background:#4d90fe;
+            color:#fff !important
+        }
+        a.ss-selected {
+            color:#222 !important;
+            font-weight:bold
+        }
+        a.ss-unselected {
+            color:#12c !important
+        }
+        .ss-selected .mark {
+            display:inline
+        }
+        .ss-unselected .mark {
+            visibility:hidden
+        }
+        #ss-barframe {
+            background:#fff;
+            left:0;
+            position:absolute;
+            visibility:hidden;
+            z-index:100
+        }
+        </style>
+    </div>
+    <noscript>&lt;style&gt;.nojsv{visibility:visible}&lt;/style&gt;</noscript>
+    <div id="mngb">
+        <div id="gb">
+            <script>
+            window.gbar && gbar.eli && gbar.eli()
+            </script>
+            <div id="gbw">
+                <div id="gbz">
+                    <span class="gbtcb"></span>
+                    <ol id="gbzc" class="gbtc">
+                        <li class="gbt">
+                            <a onclick="gbar.logger.il(1,{t:119});" class="gbzt" id="gb_119" href="https://plus.google.com/u/0/?gpsrc=ogpy0&amp;tab=wX">
+                                <span class="gbtb2"></span>
+                                <span class="gbts">+你</span>
+                            </a>
+                        </li>
+                        <li class="gbt">
+                            <a onclick="gbar.logger.il(1,{t:1});" class="gbzt gbz0l gbp1" id="gb_1" href="https://www.google.com.hk/webhp?tab=ww">
+                                <span class="gbtb2"></span>
+                                <span class="gbts">搜索</span>
+                            </a>
+                        </li>
+                        <li class="gbt">
+                            <a onclick="gbar.qs(this);gbar.logger.il(1,{t:2});" class="gbzt" id="gb_2" href="https://www.google.com.hk/search?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;um=1&amp;ie=UTF-8&amp;hl=zh-CN&amp;tbm=isch&amp;source=og&amp;sa=N&amp;tab=wi">
+                                <span class="gbtb2"></span>
+                                <span class="gbts">图片</span>
+                            </a>
+                        </li>
+                        <li class="gbt">
+                            <a onclick="gbar.qs(this);gbar.logger.il(1,{t:8});" class="gbzt" id="gb_8" href="http://ditu.google.cn/maps?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;um=1&amp;ie=UTF-8&amp;hl=zh-CN&amp;sa=N&amp;tab=wl">
+                                <span class="gbtb2"></span>
+                                <span class="gbts">地图</span>
+                            </a>
+                        </li>
+                        <li class="gbt">
+                            <a onclick="gbar.qs(this);gbar.logger.il(1,{t:78});" class="gbzt" id="gb_78" href="https://play.google.com/?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;um=1&amp;ie=UTF-8&amp;hl=zh-CN&amp;sa=N&amp;tab=w8">
+                                <span class="gbtb2"></span>
+                                <span class="gbts">Play</span>
+                            </a>
+                        </li>
+                        <li class="gbt">
+                            <a onclick="gbar.qs(this);gbar.logger.il(1,{t:36});" class="gbzt" id="gb_36" href="https://www.youtube.com/results?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;um=1&amp;ie=UTF-8&amp;gl=HK&amp;sa=N&amp;tab=w1">
+                                <span class="gbtb2"></span>
+                                <span class="gbts">YouTube</span>
+                            </a>
+                        </li>
+                        <li class="gbt">
+                            <a onclick="gbar.logger.il(1,{t:5});" class="gbzt" id="gb_5" href="https://news.google.com.hk/nwshp?hl=zh-CN&amp;tab=wn">
+                                <span class="gbtb2"></span>
+                                <span class="gbts">新闻</span>
+                            </a>
+                        </li>
+                        <li class="gbt">
+                            <a onclick="gbar.logger.il(1,{t:23});" class="gbzt" id="gb_23" href="https://mail.google.com/mail/?tab=wm">
+                                <span class="gbtb2"></span>
+                                <span class="gbts">Gmail</span>
+                            </a>
+                        </li>
+                        <li class="gbt">
+                            <a class="gbgt" id="gbztm" href="http://www.google.com.hk/intl/zh-CN/options/" onclick="gbar.tg(event,this)" aria-haspopup="true" aria-owns="gbd">
+                                <span class="gbtb2"></span>
+                                <span id="gbztms" class="gbts gbtsa">
+                                    <span id="gbztms1">更多</span>
+                                    <span class="gbma"></span>
+                                </span>
+                            </a>
+                            <div class="gbm" id="gbd" aria-owner="gbztm">
+                                <div id="gbmmb" class="gbmc gbsb gbsbis">
+                                    <ol id="gbmm" class="gbmcc gbsbic">
+                                        <li class="gbmtc"><a onclick="gbar.logger.il(1,{t:25});" class="gbmt" id="gb_25" href="https://drive.google.com/?tab=wo&amp;authuser=0">云端硬盘</a>
+                                        </li>
+                                        <li class="gbmtc"><a onclick="gbar.logger.il(1,{t:24});" class="gbmt" id="gb_24" href="https://www.google.com/calendar?tab=wc">日历</a>
+                                        </li>
+                                        <li class="gbmtc"><a onclick="gbar.qs(this);gbar.logger.il(1,{t:51});" class="gbmt" id="gb_51" href="https://translate.google.com.hk/?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;um=1&amp;ie=UTF-8&amp;hl=zh-CN&amp;sa=N&amp;tab=wT">翻译</a>
+                                        </li>
+                                        <li class="gbmtc"><a onclick="gbar.logger.il(1,{t:30});" class="gbmt" id="gb_30" href="https://www.blogger.com/?tab=wj">Blogger</a>
+                                        </li>
+                                        <li class="gbmtc"><a onclick="gbar.qs(this);gbar.logger.il(1,{t:27});" class="gbmt" id="gb_27" href="https://www.google.com.hk/finance?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;um=1&amp;ie=UTF-8&amp;sa=N&amp;tab=we">财经</a>
+                                        </li>
+                                        <li class="gbmtc"><a onclick="gbar.qs(this);gbar.logger.il(1,{t:31});" class="gbmt" id="gb_31" href="https://plus.google.com/u/0/photos?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;um=1&amp;ie=UTF-8&amp;sa=N&amp;tab=wq">相册</a>
+                                        </li>
+                                        <li class="gbmtc"><a onclick="gbar.qs(this);gbar.logger.il(1,{t:12});" class="gbmt" id="gb_12" href="https://www.google.com.hk/search?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;um=1&amp;ie=UTF-8&amp;hl=zh-CN&amp;tbo=u&amp;tbm=vid&amp;source=og&amp;sa=N&amp;tab=wv">视频</a>
+                                        </li>
+                                        <li class="gbmtc">
+                                            <div class="gbmt gbmh"></div>
+                                        </li>
+                                        <li class="gbmtc"><a onclick="gbar.logger.il(1,{t:66});" href="http://www.google.com.hk/intl/zh-CN/options/" class="gbmt">更多 »</a>
+                                        </li>
+                                    </ol>
+                                    <div class="gbsbt" style="opacity: 0;"></div>
+                                    <div class="gbsbb" style="opacity: 0;"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div id="gbg">
+                    <h2 class="gbxx">Account Options</h2>
+                    <span class="gbtcb"></span>
+                    <ol class="gbtc">
+                        <li class="gbt">
+                            <a class="gbgt" id="gbg4" href="https://profiles.google.com/?hl=zh-CN&amp;tab=wX" onclick="gbar.tg(event,this)" aria-haspopup="true" aria-owns="gbd4">
+                                <span class="gbtb2"></span>
+                                <span id="gbgs4" class="gbts gbtsa">
+                                    <span id="gbi4">
+                                        <span id="gbi4m1">chenhuarongzp@gmail.com</span>
+                                        <span class="gbma"></span>
+                                    </span>
+                                </span>
+                            </a>
+                            <div class="gbm" id="gbd4" aria-owner="gbg4" guidedhelpid="gbd4">
+                                <div class="gbmc">
+                                    <div id="gbmpdv">
+                                        <div class="gbpc">
+                                            <span id="gbmpn" class="gbps" onclick="gbar.logger.il(10,{t:69})">陈华榕</span>
+                                            <span class="gbps2">chenhuarongzp@gmail.com</span>
+                                            <div class="gbmlbw"><a id="gb_150" onclick="gbar.logger.il(10,{t:150})" href="https://accounts.google.com/ManageAccount?hl=zh-CN&amp;continue=https://www.google.com.hk/search%3Fnewwindow%3D1%26safe%3Dstrict%26es_sm%3D119%26q%3D%25E9%2592%25B1%25E5%25BA%25B7%25E6%259D%25A5%26oq%3D%25E9%2592%25B1%25E5%25BA%25B7%25E6%259D%25A5%26gs_l%3Dserp.3...1539396.1541876.0.1542030.15.11.4.0.0.0.151.932.1j7.8.0....0...1c.1j4.45.serp..7.8.506.0.4GlvEg_r0a8" class="gbmlb">帐户</a>–<a onclick="gbar.logger.il(10,{t:149})" href="http://www.google.com.hk/intl/zh-CN/privacy/" class="gbmlb">隐私权</a>
+                                            </div><a role="button" id="gbmplp" onclick="gbar.logger.il(10,{t:148})" href="https://plus.google.com/u/0/up/accounts/upgrade?gpsrc=ogjgp&amp;tab=wX" class="gbqfb gbiba">加入 Google+</a>
+                                        </div>
+                                    </div>
+                                    <div id="gbmps">
+                                        <div id="gbmpasb" class="gbsb gbsbis">
+                                            <div id="gbmpas" class="gbsbic">
+                                                <div id="gbmpm_0" class="gbmtc gbp0">
+                                                    <a id="gbmpm_0_l" href="https://www.google.com.hk/webhp?authuser=0" class="gbmt">
+                                                        <span class="gbmpiaw gbxv">
+                                                            <img class="gbmpia" width="48" height="48" onerror="window.gbar&amp;&amp;gbar.pae?gbar.pae(this):this.loadError=1;" data-asrc="//lh5.googleusercontent.com/-W3JVzYhmmE8/AAAAAAAAAAI/AAAAAAAAAAA/MW36oCyKO08/s48-c/photo.jpg" alt="陈华榕"/>
+                                                        </span>
+                                                        <span class="gbmpnw">
+                                                            <span class="gbps">陈华榕</span>
+                                                            <span class="gbps2">chenhuarongzp@gmail.com</span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="gbsbt" style="opacity: 0;"></div>
+                                            <div class="gbsbb" style="opacity: 0;"></div>
+                                        </div>
+                                        <div id="gbmppc" class="gbxx gbmtc">
+                                            <a class="gbmt" href="https://plus.google.com/u/0/dashboard">
+                                                <span class="gbmppci"></span>您的所有 Google+ 信息页 ›</a>
+                                        </div>
+                                    </div>
+                                    <table id="gbmpal">
+                                        <tbody>
+                                            <tr>
+                                                <td class="gbmpala"><a role="button" href="https://accounts.google.com/AddSession?hl=zh-CN&amp;continue=https://www.google.com.hk/search%3Fnewwindow%3D1%26safe%3Dstrict%26es_sm%3D119%26q%3D%25E9%2592%25B1%25E5%25BA%25B7%25E6%259D%25A5%26oq%3D%25E9%2592%25B1%25E5%25BA%25B7%25E6%259D%25A5%26gs_l%3Dserp.3...1539396.1541876.0.1542030.15.11.4.0.0.0.151.932.1j7.8.0....0...1c.1j4.45.serp..7.8.506.0.4GlvEg_r0a8" class="gbqfbb">添加帐户</a>
+                                                </td>
+                                                <td class="gbmpalb"><a target="_top" role="button" id="gb_71" onclick="gbar.logger.il(9,{l:'o'})" href="https://accounts.google.com/Logout?hl=zh-CN&amp;continue=https://www.google.com.hk/search%3Fnewwindow%3D1%26safe%3Dstrict%26es_sm%3D119%26q%3D%25E9%2592%25B1%25E5%25BA%25B7%25E6%259D%25A5%26oq%3D%25E9%2592%25B1%25E5%25BA%25B7%25E6%259D%25A5%26gs_l%3Dserp.3...1539396.1541876.0.1542030.15.11.4.0.0.0.151.932.1j7.8.0....0...1c.1j4.45.serp..7.8.506.0.4GlvEg_r0a8" class="gbqfbb">退出</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gbt gbtb">
+                            <span class="gbts"></span>
+                        </li>
+                        <noscript>&lt;li class=gbt&gt;&lt;a class=gbgt href="https://accounts.google.com/Logout?hl=zh-CN&amp;continue=https://www.google.com.hk/search%3Fnewwindow%3D1%26safe%3Dstrict%26es_sm%3D119%26q%3D%25E9%2592%25B1%25E5%25BA%25B7%25E6%259D%25A5%26oq%3D%25E9%2592%25B1%25E5%25BA%25B7%25E6%259D%25A5%26gs_l%3Dserp.3...1539396.1541876.0.1542030.15.11.4.0.0.0.151.932.1j7.8.0....0...1c.1j4.45.serp..7.8.506.0.4GlvEg_r0a8"&gt;&lt;span class=gbtb2&gt;&lt;/span&gt;&lt;span class=gbts&gt;退出&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class="gbt gbtb"&gt;&lt;span class=gbts&gt;&lt;/span&gt;&lt;/li&gt;</noscript>
+                        <li class="gbt">
+                            <a class="gbgt" id="gbg5" href="http://www.google.com.hk/preferences?hl=zh-CN" title="选项" onclick="gbar.tg(event,this)" aria-haspopup="true" aria-owns="gbd5">
+                                <span class="gbtb2"></span>
+                                <span id="gbgs5" class="gbts">
+                                    <span id="gbi5"></span>
+                                </span>
+                            </a>
+                            <div class="gbm" id="gbd5" aria-owner="gbg5">
+                                <div class="gbmc">
+                                    <ol id="gbom" class="gbmcc">
+                                        <li class="gbkc gbmtc"><a class="gbmt" href="/preferences?hl=zh-CN">搜索设置</a>
+                                        </li>
+                                        <li class="gbmtc">
+                                            <div class="gbmt gbmh"></div>
+                                        </li>
+                                        <li class="gbe gbmtc"><a id="gmlas" class="gbmt" href="/advanced_search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119">高级搜索</a>
+                                        </li>
+                                        <li class="gbmtc">
+                                            <div class="gbmt gbmh"></div>
+                                        </li>
+                                        <li class="gbkp gbmtc"><a class="gbmt" href="https://www.google.com/history/?hl=zh-CN">网络历史记录</a>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div id="gbx3"></div>
+            <div id="gbx4"></div>
+            <script>
+            window.gbar && gbar.elp && gbar.elp()
+            </script>
+        </div>
+    </div>
+    <textarea name="csi" id="csi" style="display:none"></textarea>
+    <noscript>&lt;meta HTTP-EQUIV="refresh" content="0;url=https://www.google.com.hk/search?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;oq=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;gs_l=serp.3...1539396.1541876.0.1542030.15.11.4.0.0.0.151.932.1j7.8.0....0...1c.1j4.45.serp..7.8.506.0.4GlvEg_r0a8&amp;gbv=1&amp;sei=6kGDU8SXGIm78gWPr4C4DA"&gt;&lt;style&gt;&lt;!-- table,div,span,font,p{display:none} --&gt;&lt;/style&gt; &lt;div style="display:block"&gt;如果您在几秒钟内没有被重定向，请点击&lt;a href="https://www.google.com.hk/search?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;oq=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;gs_l=serp.3...1539396.1541876.0.1542030.15.11.4.0.0.0.151.932.1j7.8.0....0...1c.1j4.45.serp..7.8.506.0.4GlvEg_r0a8&amp;gbv=1&amp;sei=6kGDU8SXGIm78gWPr4C4DA"&gt;此处&lt;/a&gt;。&lt;/div&gt;</noscript>
+    <div class="spch s2fp-h" style="display:none" id="spch">
+        <div class="spchc" id="spchc">
+            <div class="_sl">
+                <div class="_vi">
+                    <span class="_Du" id="spchl"></span>
+                    <span class="button" id="spchb">
+                        <div class="_Av">
+                            <span class="_pw"></span>
+                            <div class="_AW">
+                                <span class="_Vw"></span>
+                                <span class="_Jw"></span>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <div class="_wo">
+                    <span class="spcht" id="spchi" style="color:#777"></span>
+                    <span class="spcht" id="spchf" style="color:#000"></span>
+                </div>
+                <div class="google-logo"></div>
+            </div>
+            <div class="_SC">
+                <div class="_TC"></div>
+            </div>
+        </div>
+        <div class="close-button" id="spchx">×</div>
+    </div>
+    <div data-jiis="cc" id="main">
+        <div data-jibp="" data-jiis="uc" id="easter-egg"></div>
+        <div data-jiis="bp" id="cnt" class=" big">
+            <script>
+            (function() {
+                var j = 1250;
+                try {
+                    var c = document.getElementById('cnt');
+                    var s = document.getElementById('searchform');
+                    var n = '';
+                    if (window.gbar && gbar.elr) {
+                        var m = gbar.elr().mo;
+                        n = (m == 'md' ? ' mdm' : (m == 'lg' ? ' big' : ''));
+                    } else {
+                        var w = document.body && document.body.offsetWidth;
+                        if (w && w >= j) {
+                            n = ' big';
+                        }
+                    }
+                    c && (c.className += n);
+                    s && (s.className += n);
+                } catch (e) {}
+            })();
+            </script>
+            <div class="mw">
+                <div id="sfcnt">
+                    <div class="sfbg nojsv" style="top:30px">
+                        <div class="sfbgg"></div>
+                    </div>
+                    <form style="display:block;background:none" action="/search" id="tsf" method="GET" name="f" onsubmit="return q.value!=''" role="search">
+                        <div data-jibp="" data-jiis="uc" id="tophf">
+                            <input type="hidden" name="newwindow" value="1"/>
+                            <input type="hidden" name="safe" value="strict"/>
+                            <input type="hidden" name="es_sm" value="119"/>
+                        </div>
+                        <div class="tsf-p" style="position:relative">
+                            <div class="nojsv" id="logocont" style="left:0;position:absolute;padding:">
+                                <h1>
+                                    <a id="logo" href="https://www.google.com.hk/webhp?hl=zh-CN" title="Google 首页">
+                                        <img width="167" height="373" src="/images/nav_logo193_hr.png" alt="Google"/>
+                                    </a>
+                                </h1>
+                            </div>
+                            <div style="padding-top:3px">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td width="100%">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="position:relative;border-bottom:1px solid transparent">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="lst-td" id="sftab" width="100%" style="border:0">
+                                                                <div class="lst-d lst-tbb">
+                                                                    <table cellspacing="0" cellpadding="0" id="gs_id0" class="gstl_0 lst-t" style="height: 27px; padding: 0px;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td id="gs_tti0" class="gsib_a">
+                                                                                    <div id="gs_lc0" style="position: relative;">
+                                                                                        <input class="gsfi" id="lst-ib" maxlength="2048" name="q" autocomplete="off" size="41" title="Google 搜索" type="text" value="钱康来" dir="ltr" spellcheck="false" style="border: none; padding: 0px; margin: -0.0625em 0px 0px; height: 1.25em; width: 100%; position: absolute; z-index: 6; left: 0px; outline: none; background: url(data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D) transparent;"/>
+                                                                                        <div class="gsfi" id="gs_sc0" style="color: transparent; padding: 0px; position: absolute; z-index: 2; white-space: pre; visibility: hidden; background: transparent;"></div>
+                                                                                        <input class="gsfi" disabled="" autocomplete="off" aria-hidden="true" id="gs_taif0" dir="ltr" style="border: none; padding: 0px; margin: 0px; height: auto; width: 100%; position: absolute; z-index: 1; -webkit-text-fill-color: silver; color: silver; left: 0px; visibility: hidden; background-color: transparent;"/>
+                                                                                        <input class="gsfi" disabled="" autocomplete="off" aria-hidden="true" id="gs_htif0" dir="ltr" style="border: none; padding: 0px; margin: 0px; height: auto; width: 100%; position: absolute; z-index: 1; -webkit-text-fill-color: silver; color: silver; transition: all 0.218s; -webkit-transition: all 0.218s; opacity: 0; left: 0px; text-align: left; background-color: transparent;"/>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td class="gsib_b">
+                                                                                    <div class="gsst_b" id="gs_st0" style="line-height: 27px;" dir="ltr">
+                                                                                        <a class="gsst_a" href="javascript:void(0)" aria-label="按语音搜索">
+                                                                                            <span class="gsri_a gsst_e" id="gsri_ok0"></span>
+                                                                                        </a>
+                                                                                        <div id="chmo">
+                                                                                            <div id="chm">
+                                                                                                <div class="chmp">
+                                                                                                    <div class="chmpi chmp"></div>
+                                                                                                </div>
+                                                                                                <div style="display: none;">
+                                                                                                    <div class="chma"></div>
+                                                                                                    <div>发生错误，无法收听。</div>
+                                                                                                    <div><a>重新启动收听</a><a style="padding-left: 10px;">帮助</a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div style="display: none;">启动指令检测功能已关闭。
+                                                                                                    <div><a>开始收听“Ok Google”</a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="nojsb" style="display:block">
+                                                                    <div class="ds" id="sbds">
+                                                                        <div class="lsbb kpbb" id="sblsbb">
+                                                                            <button class="lsb" value="Google 搜索" name="btnG" type="submit">
+                                                                                <span class="sbico"></span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <div class="nojsv" id="sfopt" style="height:30px;position:relative">
+                                                    <div class="lsd"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div id="pocs" style="display:none;left:0px;white-space:nowrap">
+                                                    <div id="pocs0">
+                                                        <span>
+                                                            <span>Google</span>即搜即得不可用。请按回车键进行搜索。</span>&nbsp;<a href="/support/websearch/bin/answer.py?answer=186645&amp;form=bb&amp;hl=zh-CN">了解详情</a>
+                                                    </div>
+                                                    <div id="pocs1">由于网速慢，
+                                                        <span>Google</span>即搜即得已关闭。请按回车键进行搜索。</div>
+                                                    <div id="pocs2">按回车键进行搜索。</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="gsfi" style="color: rgb(0, 0, 0); padding: 0px; position: absolute; white-space: pre; visibility: hidden; background: transparent;"></div>
+                        <input type="hidden" name="oq"/>
+                        <input type="hidden" name="gs_l"/>
+                    </form>
+                </div>
+                <div data-jibp="h" data-jiis="uc" id="dc"></div>
+                <div id="subform_ctrl"></div>
+            </div>
+            <div data-jibp="h" data-jiis="uc" id="bst" style="display:none"></div>
+            <div data-jibp="h" data-jiis="uc" id="top_nav">
+                <style>
+                #ab_ctls a {
+                    text-decoration:none
+                }
+                #ab_ctls a.ab_button:active, #ab_ctls a.ab_dropdownlnk:active {
+                    color:#333
+                }
+                ._ex {
+                    background:url(/images/nav_logo193.png) no-repeat;
+                    bottom:1px;
+                    display:inline-block;
+                    position:relative;
+                    vertical-align:middle
+                }
+                ._fx {
+                    background-position:0 -328px;
+                    height:14px;
+                    width:14px
+                }
+                ._gx {
+                    background-position:-30px -328px;
+                    height:14px;
+                    width:14px
+                }
+                .selected ._fx {
+                    background-position:-15px -328px
+                }
+                .selected ._gx {
+                    background-position:-45px -328px
+                }
+                </style>
+                <div class="hdtbna notl" id="hdtb" role="navigation" tabindex="0">
+                    <div id="hdtbSum">
+                        <div id="hdtb_s" style="white-space:nowrap">
+                            <div id="hdtb_msb">
+                                <div class="hdtb_mitem hdtb_msel">网页</div>
+                                <div class="hdtb_mitem"><a class="q qs" href="http://maps.google.com.hk/maps?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CAgQ_AUoAQ">地图</a>
+                                </div>
+                                <div class="hdtb_mitem"><a class="q qs" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;source=lnms&amp;tbm=nws&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CAkQ_AUoAg">新闻</a>
+                                </div>
+                                <div class="hdtb_mitem"><a class="q qs" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CAoQ_AUoAw">图片</a>
+                                </div>
+                                <div class="hdtb_mitem"><a class="q qs" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;source=lnms&amp;tbm=vid&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CAsQ_AUoBA">视频</a>
+                                </div>
+                                <a id="hdtb_more" role="menu" tabindex="0" aria-label="更多">
+                                    <span class="mn-hd-txt">更多</span>
+                                    <span class="mn-dwn-arw"></span>
+                                </a>
+                                <div class="hdtb-mn-c" id="hdtb_more_mn" data-ved="0CAwQ2h8oBQ">
+                                    <div class="hdtb_mitem"><a class="q qs" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;source=lnms&amp;tbm=bks&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CA0Q_AUoAA">图书</a>
+                                    </div>
+                                    <div class="hdtb_mitem"><a class="q qs" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;source=lnms&amp;tbm=klg&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CA4Q_AUoAQ">问答</a>
+                                    </div>
+                                    <div class="hdtb_mitem"><a class="q qs" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;source=lnms&amp;tbm=app&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CA8Q_AUoAg">应用</a>
+                                    </div>
+                                </div><a class="hdtb-tl" id="hdtb_tls" role="button" tabindex="0" data-ved="0CBAQ2x8oBg">搜索工具</a>
+                            </div>
+                            <ol id="ab_ctls">
+                                <li class="ab_ctl" id="ab_ctl_ps">
+                                    <a class="ab_button left kbtn-small selected disabled" aria-pressed="true" href="https://www.google.com.hk/search?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;oq=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;gs_l=serp.3...1539396.1541876.0.1542030.15.11.4.0.0.0.151.932.1j7.8.0....0...1c.1j4.45.serp..7.8.506.0.4GlvEg_r0a8&amp;pws=1" jsaction="keydown:ab.go" id="abar_ps_on" role="button" tabindex="0" unselectable="on" aria-label="目前显示的是私人搜索结果">
+                                        <span class="_ex _fx" unselectable="on"></span>
+                                    </a>
+                                    <a class="ab_button right kbtn-small" aria-pressed="false" href="https://www.google.com.hk/search?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;oq=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;gs_l=serp.3...1539396.1541876.0.1542030.15.11.4.0.0.0.151.932.1j7.8.0....0...1c.1j4.45.serp..7.8.506.0.4GlvEg_r0a8&amp;pws=0" jsaction="keydown:ab.go;ab.cc" id="abar_ps_off" role="button" tabindex="0" unselectable="on" aria-label="隐藏私人搜索结果">
+                                        <span class="_ex _gx" unselectable="on"></span>
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="hdtb-td-c hdtb-td-h" aria-expanded="false" id="hdtbMenus" tabindex="0" data-ved="0CBEQ3B8">
+                        <div class="hdtb-mn-cont">
+                            <div id="hdtb-mn-gp"></div>
+                            <div class="hdtb-mn-hd" aria-haspopup="true" role="button" tabindex="0" aria-label="不限语言">
+                                <div class="mn-hd-txt">不限语言</div>
+                                <span class="mn-dwn-arw"></span>
+                            </div>
+                            <ul class="hdtbU hdtb-mn-c">
+                                <li class="hdtbItm hdtbSel" id="lr_" tabindex="0">不限语言</li>
+                                <li class="hdtbItm" id="lr_lang_1zh-CN_lang_1zh-TW"><a class="q qs" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;source=lnt&amp;tbs=lr:lang_1zh-CN%7Clang_1zh-TW&amp;lr=lang_zh-CN%7Clang_zh-TW&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CBUQpwUoAQ">所有中文网页</a>
+                                </li>
+                                <li class="hdtbItm" id="lr_lang_1zh-CN"><a class="q qs" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;source=lnt&amp;tbs=lr:lang_1zh-CN&amp;lr=lang_zh-CN&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CBYQpwUoAg">简体中文网页</a>
+                                </li>
+                            </ul>
+                            <div class="hdtb-mn-hd" aria-haspopup="true" role="button" tabindex="0" aria-label="时间不限">
+                                <div class="mn-hd-txt">时间不限</div>
+                                <span class="mn-dwn-arw"></span>
+                            </div>
+                            <ul class="hdtbU hdtb-mn-c">
+                                <li class="hdtbItm hdtbSel" id="qdr_" tabindex="0">时间不限</li>
+                                <li class="hdtbItm" id="qdr_h"><a class="q qs" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;source=lnt&amp;tbs=qdr:h&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CBkQpwUoAQ"> 过去 1 小时内</a>
+                                </li>
+                                <li class="hdtbItm" id="qdr_d"><a class="q qs" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;source=lnt&amp;tbs=qdr:d&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CBoQpwUoAg"> 过去 24 小时内</a>
+                                </li>
+                                <li class="hdtbItm" id="qdr_w"><a class="q qs" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;source=lnt&amp;tbs=qdr:w&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CBsQpwUoAw"> 过去 1 周内</a>
+                                </li>
+                                <li class="hdtbItm" id="qdr_m"><a class="q qs" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;source=lnt&amp;tbs=qdr:m&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CBwQpwUoBA"> 过去 1 个月内</a>
+                                </li>
+                                <li class="hdtbItm" id="qdr_y"><a class="q qs" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;source=lnt&amp;tbs=qdr:y&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CB0QpwUoBQ"> 过去 1 年内</a>
+                                </li>
+                                <li class="hdtbItm" id="cdr_opt">
+                                    <div class="cdr_sep"></div>
+                                    <span class="q" jsaction="ttbcdr.showCal" id="cdrlnk" tabindex="0" data-ved="0CB4QpwUoBg">自定日期范围...</span>
+                                    <div class="cdr_cont" style="display:none">
+                                        <div class="cdr_bg"></div>
+                                        <div class="cdr_dlg">
+                                            <div class="cdr_ttl">自定日期范围</div>
+                                            <label class="cdr_mml cdr_minl" for="cdr_min">从</label>
+                                            <label class="cdr_mml cdr_maxl" for="cdr_max">至</label>
+                                            <div class="cdr_cls"></div>
+                                            <div class="cdr_sft">
+                                                <div class="cdr_highl"></div>
+                                                <form action="/search" class="cdr_frm" method="get">
+                                                    <input type="hidden" name="q" value="钱康来"/>
+                                                    <input type="hidden" name="newwindow" value="1"/>
+                                                    <input type="hidden" name="safe" value="strict"/>
+                                                    <input type="hidden" name="es_sm" value="119"/>
+                                                    <input name="source" type="hidden" value="lnt"/>
+                                                    <input value="cdr:1,cd_min:x,cd_max:x" class="ctbs" name="tbs" type="hidden"/>
+                                                    <input value="" name="tbm" type="hidden"/>
+                                                    <input type="text" value="" class="ktf mini cdr_mm cdr_min" autocomplete="off" tabindex="1"/>
+                                                    <input type="text" value="" class="ktf mini cdr_mm cdr_max" autocomplete="off" tabindex="1"/>
+                                                    <input class="ksb mini cdr_go" value="开始搜索" jsaction="tbt.scf" tabindex="1" type="submit"/>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="hdtb-mn-hd" aria-haspopup="true" role="button" tabindex="0" aria-label="所有结果">
+                                <div class="mn-hd-txt">所有结果</div>
+                                <span class="mn-dwn-arw"></span>
+                            </div>
+                            <ul class="hdtbU hdtb-mn-c">
+                                <li class="hdtbItm hdtbSel" id="whv_" tabindex="0">所有结果</li>
+                                <li class="hdtbItm" id="frim_1"><a class="q qs" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;source=lnt&amp;tbs=frim:1&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CCEQpwUoAQ">私人</a>
+                                </li>
+                                <li class="hdtbItm" id="li_1"><a class="q qs" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;source=lnt&amp;tbs=li:1&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CCIQpwUoAg">精确匹配</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-jibp="h" data-jiis="uc" id="appbar">
+                <style>
+                #resultStats {
+                    position:absolute;
+                    top:0;
+                    -webkit-transition:all 220ms ease-in-out
+                }
+                .hdtb-ab-o #resultStats {
+                    opacity:0;
+                    top:13px
+                }
+                </style>
+                <div id="extabar">
+                    <div id="topabar" style="position:relative">
+                        <div class="ab_tnav_wrp" id="slim_appbar">
+                            <div id="sbfrm_l">
+                                <div id="resultStats">找到约 22,500 条结果
+                                    <nobr>（用时 0.46 秒）&nbsp;</nobr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="botabar" style="display:none"></div>
+                </div>
+                <div></div>
+            </div>
+            <div class="mw" data-jibp="h" data-jiis="uc" id="ucs"></div>
+            <div class="mw">
+                <div id="rcnt" style="clear:both;position:relative;zoom:1">
+                    <div data-jibp="h" data-jiis="uc" id="gko-srp-sp"></div>
+                    <div class="col" style="width:0">
+                        <div data-jibp="h" data-jiis="uc" id="leftnavc"></div>
+                    </div>
+                    <div class="col" style="width:0">
+                        <div id="center_col">
+                            <div data-jibp="h" data-jiis="uc" id="taw">
+                                <div></div>
+                                <div style="padding:0 8px">
+                                    <div class="med"></div>
+                                </div>
+                                <div id="tvcap"></div>
+                            </div>
+                            <div class="med" id="res" role="main">
+                                <div data-jibp="h" data-jiis="uc" id="topstuff">
+                                    <style>
+                                    .spell {
+                                        font-size:18px
+                                    }
+                                    .spell_orig {
+                                        font-size:15px
+                                    }
+                                    </style>
+                                    <div class="_Ym" id="msg_box" style="display:none">
+                                        <p class="_p ps-sru">
+                                            <span>
+                                                <span class="spell" id="srfm"></span>&nbsp;
+                                                <a class="spell" id="srfl"></a>
+                                                <br/>
+                                            </span>
+                                            <span id="sif">
+                                                <span class="spell_orig" id="sifm"></span>&nbsp;
+                                                <a class="spell_orig" id="sifl"></a>
+                                                <br/>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div data-jibp="h" data-jiis="uc" id="search">
+                                    <style>
+                                    .rgsep {
+                                        background-color:rgba(0, 0, 0, 0.07);
+                                        border-width:0;
+                                        color:rgba(0, 0, 0, 0.07);
+                                        height:1px;
+                                        margin:0 -8px 16px -8px
+                                    }
+                                    ._pA.rgsep, .ct-lgsep.rgsep {
+                                        margin-top:22px
+                                    }
+                                    </style>
+                                    <!--a-->
+                                    <h2 class="hd">搜索结果</h2>
+                                    <div data-async-context="query:%E9%92%B1%E5%BA%B7%E6%9D%A5" id="ires">
+                                        <ol eid="6kGDU8SXGIm78gWPr4C4DA" id="rso">
+                                            <div class="srg">
+                                                <li class="g">
+                                                    <!--m-->
+                                                    <div class="rc" data-hveid="41">
+                                                        <h3 class="r">
+                                                            <a href="http://www.zhihu.com/people/qian-kang-lai" onmousedown="return rwt(this,'','','','1','AFQjCNHuVHh0Fy8H1pe9v2yhZG0c_oedIQ','iVBnq6whStXOxBD-4Y-3TA','0CCoQFjAA','','',event)" target="_blank">
+                                                                <em>钱康来</em>- 知乎</a>
+                                                        </h3>
+                                                        <div class="s">
+                                                            <div>
+                                                                <div class="f kv _ns" style="white-space:nowrap">
+                                                                    <cite class="_Od">www.zhihu.com/people/qian-kang-lai</cite>
+                                                                    <div class="action-menu ab_ctl">
+                                                                        <a class="_cl ab_button" href="#" id="am-b0" aria-label="结果详情" jsaction="ab.tdd;keydown:ab.hbke;keypress:ab.mskpe" aria-expanded="false" aria-haspopup="true" role="button" data-ved="0CCsQ7B0wAA">
+                                                                            <span class="mn-dwn-arw"></span>
+                                                                        </a>
+                                                                        <div class="action-menu-panel ab_dropdown" jsaction="keydown:ab.hdke;mouseover:ab.hdhne;mouseout:ab.hdhue" role="menu" tabindex="-1" data-ved="0CCwQqR8wAA">
+                                                                            <ul>
+                                                                                <li class="action-menu-item ab_dropdownitem" role="menuitem"><a class="fl" href="http://webcache.googleusercontent.com/search?q=cache:P1yEvkODqIEJ:www.zhihu.com/people/qian-kang-lai+&amp;cd=1&amp;hl=zh-CN&amp;ct=clnk&amp;gl=cn" onmousedown="return rwt(this,'','','','1','AFQjCNEv16DfJL5S-k5w1bDPA-X9zbkWWw','O_SY3wxq_xjSAEjSDEwBlg','0CC0QIDAA','','',event)" target="_blank">网页快照</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="f slp"></div>
+                                                                <span class="st">
+                                                                    <em>钱康来</em>关注了问题大学毕业后档案去哪儿了? 1 月前.
+                                                                    <em>钱康来</em>关注了问题你为什么从网易离职？ 2 月前.
+                                                                    <em>钱康来</em>赞同了回答. 依靠IDE 会让程序员的水平变差吗？</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--n-->
+                                                </li>
+                                                <li class="g">
+                                                    <!--m-->
+                                                    <div class="rc" data-hveid="46">
+                                                        <h3 class="r">
+                                                            <a href="http://name.renren.com/qiankanglai23010988" onmousedown="return rwt(this,'','','','2','AFQjCNEtg43IBbO-mzy6MFxFUNtSyJyWTQ','XnfRk6sl1ytSqO0zrsy8ZQ','0CC8QFjAB','','',event)" target="_blank">
+                                                                <em>钱康来</em>有多少
+                                                                <em>钱康来</em>,
+                                                                <em>钱康来</em>同名同姓-人人网校内</a>
+                                                        </h3>
+                                                        <div class="s">
+                                                            <div>
+                                                                <div class="f kv _ns" style="white-space:nowrap">
+                                                                    <cite class="_Od">name.renren.com/qiankanglai23010988</cite>
+                                                                    <div class="action-menu ab_ctl">
+                                                                        <a class="_cl ab_button" href="#" id="am-b1" aria-label="结果详情" jsaction="ab.tdd;keydown:ab.hbke;keypress:ab.mskpe" aria-expanded="false" aria-haspopup="true" role="button" data-ved="0CDAQ7B0wAQ">
+                                                                            <span class="mn-dwn-arw"></span>
+                                                                        </a>
+                                                                        <div class="action-menu-panel ab_dropdown" jsaction="keydown:ab.hdke;mouseover:ab.hdhne;mouseout:ab.hdhue" role="menu" tabindex="-1" data-ved="0CDEQqR8wAQ">
+                                                                            <ul>
+                                                                                <li class="action-menu-item ab_dropdownitem" role="menuitem"><a class="fl" href="http://webcache.googleusercontent.com/search?q=cache:1hhNJfLjiJ4J:name.renren.com/qiankanglai23010988+&amp;cd=2&amp;hl=zh-CN&amp;ct=clnk&amp;gl=cn" onmousedown="return rwt(this,'','','','2','AFQjCNFxG-ysTZBXkoW9DEiZqthGdr_VjA','VRbKYk5nGpYtFECFWtU5HQ','0CDIQIDAB','','',event)" target="_blank">网页快照</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="f slp"></div>
+                                                                <span class="st">全国有多少
+                                                                    <em>钱康来</em>？
+                                                                    <em>钱康来</em>都来自哪儿，是男生还是女生？
+                                                                    <em>钱康来</em>姓名的五行八字得分如何？查找和结识同名同姓的
+                                                                    <em>钱康来</em>, 了解
+                                                                    <em>钱康来</em>姓名吉凶，从人人网校内&nbsp;...</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--n-->
+                                                </li>
+                                                <li class="g">
+                                                    <!--m-->
+                                                    <div class="rc" data-hveid="51">
+                                                        <h3 class="r">
+                                                            <a href="http://www.docin.com/renren_248972642" onmousedown="return rwt(this,'','','','3','AFQjCNGhcX2xgDVVwoM0Hx2_XhEYyECzwA','a9Tcx6rf-acJKl4iSXwCng','0CDQQFjAC','','',event)" target="_blank">
+                                                                <em>钱康来</em>的个人主页-docin.com豆丁网</a>
+                                                        </h3>
+                                                        <div class="s">
+                                                            <div>
+                                                                <div class="f kv _ns" style="white-space:nowrap">
+                                                                    <cite class="_Od">www.docin.com/renren_248972642</cite>
+                                                                    <div class="action-menu ab_ctl">
+                                                                        <a class="_cl ab_button" href="#" id="am-b2" aria-label="结果详情" jsaction="ab.tdd;keydown:ab.hbke;keypress:ab.mskpe" aria-expanded="false" aria-haspopup="true" role="button" data-ved="0CDUQ7B0wAg">
+                                                                            <span class="mn-dwn-arw"></span>
+                                                                        </a>
+                                                                        <div class="action-menu-panel ab_dropdown" jsaction="keydown:ab.hdke;mouseover:ab.hdhne;mouseout:ab.hdhue" role="menu" tabindex="-1" data-ved="0CDYQqR8wAg">
+                                                                            <ul>
+                                                                                <li class="action-menu-item ab_dropdownitem" role="menuitem"><a class="fl" href="http://webcache.googleusercontent.com/search?q=cache:KLlSk5P7JC4J:www.docin.com/renren_248972642+&amp;cd=3&amp;hl=zh-CN&amp;ct=clnk&amp;gl=cn" onmousedown="return rwt(this,'','','','3','AFQjCNEFLNl9_6R6CTEWy5gLdr6CYskaDw','gfiUPqa6xUeusANXn5BKUQ','0CDcQIDAC','','',event)" target="_blank">网页快照</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="f slp"></div>
+                                                                <span class="st">豆丁(docin.com)是世界最大的文档销售与分享社区。在这里已经上传了成千上万的文档。来豆丁，即刻分享销售你的文档。我们为原创人群提供安全、自由、民主、便利&nbsp;...</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--n-->
+                                                </li>
+                                                <li class="g">
+                                                    <!--m-->
+                                                    <div class="rc" data-hveid="56">
+                                                        <h3 class="r"><a href="http://www.oldq.com.cn/Article/Print.asp?ArticleID=87903" onmousedown="return rwt(this,'','','','4','AFQjCNEcsSrphC4wYSCh0pL28w1y0MQm5A','Mb053P37GWwjr-4DOsASjw','0CDkQFjAD','','',event)" target="_blank">省锡中2008高考喜报(wap手机版) - 苏教版高中语文教学网</a>
+                                                        </h3>
+                                                        <div class="s">
+                                                            <div>
+                                                                <div class="f kv _ns" style="white-space:nowrap">
+                                                                    <cite class="_Od">www.oldq.com.cn/Article/Print.asp?ArticleID=87903</cite>
+                                                                    <div class="action-menu ab_ctl">
+                                                                        <a class="_cl ab_button" href="#" id="am-b3" aria-label="结果详情" jsaction="ab.tdd;keydown:ab.hbke;keypress:ab.mskpe" aria-expanded="false" aria-haspopup="true" role="button" data-ved="0CDoQ7B0wAw">
+                                                                            <span class="mn-dwn-arw"></span>
+                                                                        </a>
+                                                                        <div class="action-menu-panel ab_dropdown" jsaction="keydown:ab.hdke;mouseover:ab.hdhne;mouseout:ab.hdhue" role="menu" tabindex="-1" data-ved="0CDsQqR8wAw">
+                                                                            <ul>
+                                                                                <li class="action-menu-item ab_dropdownitem" role="menuitem"><a class="fl" href="http://webcache.googleusercontent.com/search?q=cache:qwXGp4Th0vcJ:www.oldq.com.cn/Article/Print.asp%3FArticleID%3D87903+&amp;cd=4&amp;hl=zh-CN&amp;ct=clnk&amp;gl=cn" onmousedown="return rwt(this,'','','','4','AFQjCNHloDAFYIuNeIljcSQZRaVnGUH59Q','fdPak2sf8XmzBKmiVm4WzQ','0CDwQIDAD','','',event)" target="_blank">网页快照</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="f slp"></div>
+                                                                <span class="st">
+                                                                    <em>钱康来</em>. 清华大学. 2. 耿 斌. 中国人民大学. 3. 冯成栋. 中国人民大学. 4. 王 乾. 中国人民大学. 5. 胡 涛. 南京大学. 6. 江肃伟. 南京大学. 7. 陈 俊. 南京大学. 8. 王 惠.</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--n-->
+                                                </li>
+                                                <li class="g">
+                                                    <!--m-->
+                                                    <div class="rc" data-hveid="61">
+                                                        <h3 class="r"><a href="http://ar.newsmth.net/thread-1187683f19508c.html" onmousedown="return rwt(this,'','','','5','AFQjCNFgqCqg1bDTsaZTwGAans6UMBzA_w','q3WURHJYoNertIfoAcfaaw','0CD4QFjAE','','',event)" target="_blank">水木-探险-十一小五台游记by<em>钱康来</em> - 水木社区归档站</a>
+                                                        </h3>
+                                                        <div class="s">
+                                                            <div>
+                                                                <div class="f kv _ns" style="white-space:nowrap">
+                                                                    <cite class="_Od bc">ar.newsmth.net › <a href="http://ar.newsmth.net/boards.html" onmousedown="return rwt(this,'','','','5','AFQjCNHRzuIctaofiRQAhxiyAB-TqG9a6g','SCOhfFJzUOQaoT_Rh65x2Q','0CEAQ6QUoADAE','','',event)" target="_blank">版面列表</a> › <a href="http://ar.newsmth.net/board-183.html" onmousedown="return rwt(this,'','','','5','AFQjCNHlGbu3v0IJZ8H4c_NNVhjhsul8fw','kSrUjtPsqIZJQqNFb92AiA','0CEEQ6QUoATAE','','',event)" target="_blank">探险</a>
+                                                                    </cite>
+                                                                    <div class="action-menu ab_ctl">
+                                                                        <a class="_cl ab_button" href="#" id="am-b4" aria-label="结果详情" jsaction="ab.tdd;keydown:ab.hbke;keypress:ab.mskpe" aria-expanded="false" aria-haspopup="true" role="button" data-ved="0CEIQ7B0wBA">
+                                                                            <span class="mn-dwn-arw"></span>
+                                                                        </a>
+                                                                        <div class="action-menu-panel ab_dropdown" jsaction="keydown:ab.hdke;mouseover:ab.hdhne;mouseout:ab.hdhue" role="menu" tabindex="-1" data-ved="0CEMQqR8wBA">
+                                                                            <ul>
+                                                                                <li class="action-menu-item ab_dropdownitem" role="menuitem"><a class="fl" href="http://webcache.googleusercontent.com/search?q=cache:6x6shTNEfzoJ:ar.newsmth.net/thread-1187683f19508c.html+&amp;cd=5&amp;hl=zh-CN&amp;ct=clnk&amp;gl=cn" onmousedown="return rwt(this,'','','','5','AFQjCNGRYh5zE9ZpORD7a21DaaSvlDp6RA','Hqw4dWRuklqCQFEII_wCHQ','0CEQQIDAE','','',event)" target="_blank">网页快照</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="f slp"></div>
+                                                                <span class="st">标 题: 十一小五台游记by
+                                                                    <em>钱康来</em>发信站: 水木社区 (Sun Oct 10 01:20:23 2010), 站内 第一次参加协会的活动，就是如此经典+火爆的十一小五台，不得不说是我自己的&nbsp;...</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--n-->
+                                                </li>
+                                                <li class="g">
+                                                    <!--m-->
+                                                    <div class="rc" data-hveid="69">
+                                                        <h3 class="r">
+                                                            <a href="http://variable.42qu.com/" onmousedown="return rwt(this,'','','','6','AFQjCNExDRmWmDDg3N9RXGxSkkuxpkBQCA','jmgtGAmkT047lxHXSi0UJw','0CEYQFjAF','','',event)" target="_blank">
+                                                                <em>钱康来</em>- 42qu.com</a>
+                                                        </h3>
+                                                        <div class="s">
+                                                            <div>
+                                                                <div class="f kv _ns" style="white-space:nowrap">
+                                                                    <cite class="_Od">variable.42qu.com/</cite>
+                                                                    <div class="action-menu ab_ctl">
+                                                                        <a class="_cl ab_button" href="#" id="am-b5" aria-label="结果详情" jsaction="ab.tdd;keydown:ab.hbke;keypress:ab.mskpe" aria-expanded="false" aria-haspopup="true" role="button" data-ved="0CEcQ7B0wBQ">
+                                                                            <span class="mn-dwn-arw"></span>
+                                                                        </a>
+                                                                        <div class="action-menu-panel ab_dropdown" jsaction="keydown:ab.hdke;mouseover:ab.hdhne;mouseout:ab.hdhue" role="menu" tabindex="-1" data-ved="0CEgQqR8wBQ">
+                                                                            <ul>
+                                                                                <li class="action-menu-item ab_dropdownitem" role="menuitem"><a class="fl" href="http://webcache.googleusercontent.com/search?q=cache:JzXKuyA2XdQJ:variable.42qu.com/+&amp;cd=6&amp;hl=zh-CN&amp;ct=clnk&amp;gl=cn" onmousedown="return rwt(this,'','','','6','AFQjCNHqHmJytpRnlwZlJ5m_J9arKJ1XSg','dpv6oZyomn1eRLJdAOW4EA','0CEkQIDAF','','',event)" target="_blank">网页快照</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="f slp"></div>
+                                                                <span class="st">
+                                                                    <em>钱康来</em>( 清华大学2008级, 软件学院) @42区. 遇见- 42qu.com.
+                                                                    <em>钱康来</em>. @ 北京海淀区. 24岁, 双子男. 软件学院. 学生. 清华大学. 2008级. 要走的路还有很远，学习！ 2.</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--n-->
+                                                </li>
+                                                <li class="g">
+                                                    <!--m-->
+                                                    <div class="rc" data-hveid="74">
+                                                        <h3 class="r"><a href="http://forum.join-tsinghua.edu.cn/dispbbs.php?boardid=21&amp;id=16698&amp;page=1" onmousedown="return rwt(this,'','','','7','AFQjCNH4xHg8joekbxTqz5jpaAF0SSxnMQ','62FppbEhYV80477hTSZs0Q','0CEsQFjAG','','',event)" target="_blank">锡山高级中学，<em>钱康来</em>：荣获“清华大学优秀毕业生”称号和一二九奖学金- 江 <b>...</b></a>
+                                                        </h3>
+                                                        <div class="s">
+                                                            <div>
+                                                                <div class="f kv _ns" style="white-space:nowrap">
+                                                                    <cite class="_Od">forum.join-tsinghua.edu.cn/dispbbs.php?boardid=21&amp;id=16698...</cite>
+                                                                    <div class="action-menu ab_ctl">
+                                                                        <a class="_cl ab_button" href="#" id="am-b6" aria-label="结果详情" jsaction="ab.tdd;keydown:ab.hbke;keypress:ab.mskpe" aria-expanded="false" aria-haspopup="true" role="button" data-ved="0CEwQ7B0wBg">
+                                                                            <span class="mn-dwn-arw"></span>
+                                                                        </a>
+                                                                        <div class="action-menu-panel ab_dropdown" jsaction="keydown:ab.hdke;mouseover:ab.hdhne;mouseout:ab.hdhue" role="menu" tabindex="-1" data-ved="0CE0QqR8wBg">
+                                                                            <ul>
+                                                                                <li class="action-menu-item ab_dropdownitem" role="menuitem"><a class="fl" href="http://webcache.googleusercontent.com/search?q=cache:MZljPL9lHikJ:forum.join-tsinghua.edu.cn/dispbbs.php%3Fboardid%3D21%26id%3D16698%26page%3D1+&amp;cd=7&amp;hl=zh-CN&amp;ct=clnk&amp;gl=cn" onmousedown="return rwt(this,'','','','7','AFQjCNFtaLX06jCZUQGHt8UdaCYobIVNfQ','TmGs4cRklR1CFzPPX6tivQ','0CE4QIDAG','','',event)" target="_blank">网页快照</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="f slp">2012年7月26日 - 2 个帖子 - &lrm;1 个作者</div>
+                                                                <span class="st">
+                                                                    <em>钱康来</em>,2008年从锡山高级中学考入清华大学软件学院。2011年，
+                                                                    <em>钱康来</em>荣获清华大学一二九奖学金（清华三大奖学金之一，名额为全校本科生和&nbsp;...</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--n-->
+                                                </li>
+                                                <li class="g">
+                                                    <!--m-->
+                                                    <div class="rc" data-hveid="80">
+                                                        <h3 class="r">
+                                                            <a href="https://zh-cn.facebook.com/public/%E9%92%B1%E5%BA%B7%E6%9D%A5" onmousedown="return rwt(this,'','','','8','AFQjCNGXhk5OxP21IrgJr_qhbBOmivTOig','GFKhdKd0DvYWj5HzNHzYNA','0CFEQFjAH','','',event)" target="_blank">
+                                                                <em>钱康来</em>Profiles | Facebook</a>
+                                                        </h3>
+                                                        <div class="s">
+                                                            <div>
+                                                                <div class="f kv _ns" style="white-space:nowrap">
+                                                                    <cite class="_Od">https://zh-cn.facebook.com/public/钱康来</cite>
+                                                                </div>
+                                                                <div class="f slp"></div>
+                                                                <span class="st">在Facebook查看名为
+                                                                    <em>钱康来</em>的个人主页。加入Facebook 与
+                                                                    <em>钱康来</em>和其他你认识的人联系。Facebook给人们可以互相分享与交流的空间，让世界变得更加开放，联系&nbsp;...</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--n-->
+                                                </li>
+                                                <li class="g">
+                                                    <!--m-->
+                                                    <div class="rc" data-hveid="82">
+                                                        <h3 class="r">
+                                                            <a href="http://www.jxshs.cn/article/systemarticle_pkId_6707_aid_16550.html" onmousedown="return rwt(this,'','','','9','AFQjCNFOYWScpKaLoVme73TjMr52z9ycBA','zmbULQu2W7PtnSqWjva0Eg','0CFMQFjAI','','',event)" target="_blank">
+                                                                <em>钱康来</em>同学被清华大学提前录取- 江苏省锡山高级中学</a>
+                                                        </h3>
+                                                        <div class="s">
+                                                            <div>
+                                                                <div class="f kv _ns" style="white-space:nowrap">
+                                                                    <cite class="_Od">www.jxshs.cn/article/systemarticle_pkId_6707_aid_16550.html</cite>
+                                                                    <div class="action-menu ab_ctl">
+                                                                        <a class="_cl ab_button" href="#" id="am-b8" aria-label="结果详情" jsaction="ab.tdd;keydown:ab.hbke;keypress:ab.mskpe" aria-expanded="false" aria-haspopup="true" role="button" data-ved="0CFQQ7B0wCA">
+                                                                            <span class="mn-dwn-arw"></span>
+                                                                        </a>
+                                                                        <div class="action-menu-panel ab_dropdown" jsaction="keydown:ab.hdke;mouseover:ab.hdhne;mouseout:ab.hdhue" role="menu" tabindex="-1" data-ved="0CFUQqR8wCA">
+                                                                            <ul>
+                                                                                <li class="action-menu-item ab_dropdownitem" role="menuitem"><a class="fl" href="http://webcache.googleusercontent.com/search?q=cache:7nZ94jVuFd0J:www.jxshs.cn/article/systemarticle_pkId_6707_aid_16550.html+&amp;cd=9&amp;hl=zh-CN&amp;ct=clnk&amp;gl=cn" onmousedown="return rwt(this,'','','','9','AFQjCNG3Y9DExZHsPlOPGN_C3plx4FufGw','Q47v-u3gDNeXp0wPm62HaQ','0CFYQIDAI','','',event)" target="_blank">网页快照</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="f slp"></div>
+                                                                <span class="st">
+                                                                    <span class="f">2008年1月23日 -</span>喜报（一）. 我校高三（8）班
+                                                                    <em>钱康来</em>同学在刚刚结束的2008年清华大学保送生考试中，
+                                                                    <wbr/>以优异的成绩被清华大学计算机软件学院录取，特此向全校师生&nbsp;...</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--n-->
+                                                </li>
+                                                <li class="g">
+                                                    <!--m-->
+                                                    <div class="rc" data-hveid="88">
+                                                        <h3 class="r"><a href="http://www.jseea.cn/contents/channel_14/2008/05/805281648185.html" onmousedown="return rwt(this,'','','','10','AFQjCNGqzZDxfkvAWirYBaVYEZHfQoPrLg','ya_Zk8qYIlYaDgKjVCWHTg','0CFkQFjAJ','','',event)" target="_blank">江苏省教育考试院08年普高招收保送生拟录取名单公示（三）</a>
+                                                        </h3>
+                                                        <div class="s">
+                                                            <div>
+                                                                <div class="f kv _ns" style="white-space:nowrap">
+                                                                    <cite class="_Od">www.jseea.cn/contents/channel_14/2008/05/805281648185.html</cite>
+                                                                    <div class="action-menu ab_ctl">
+                                                                        <a class="_cl ab_button" href="#" id="am-b9" aria-label="结果详情" jsaction="ab.tdd;keydown:ab.hbke;keypress:ab.mskpe" aria-expanded="false" aria-haspopup="true" role="button" data-ved="0CFoQ7B0wCQ">
+                                                                            <span class="mn-dwn-arw"></span>
+                                                                        </a>
+                                                                        <div class="action-menu-panel ab_dropdown" jsaction="keydown:ab.hdke;mouseover:ab.hdhne;mouseout:ab.hdhue" role="menu" tabindex="-1" data-ved="0CFsQqR8wCQ">
+                                                                            <ul>
+                                                                                <li class="action-menu-item ab_dropdownitem" role="menuitem"><a class="fl" href="http://webcache.googleusercontent.com/search?q=cache:2RtzMp3uTDYJ:www.jseea.cn/contents/channel_14/2008/05/805281648185.html+&amp;cd=10&amp;hl=zh-CN&amp;ct=clnk&amp;gl=cn" onmousedown="return rwt(this,'','','','10','AFQjCNHtxSutWsMG2zFCsoZ133cbQWt9ig','dRFgzaadJ7XF4qQCH86X7A','0CFwQIDAJ','','',event)" target="_blank">网页快照</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="f slp"></div>
+                                                                <span class="st">
+                                                                    <span class="f">2008年5月28日 -</span>08320206450263,
+                                                                    <em>钱康来</em>, 男, 江苏省锡山高级中学, 清华大学, 计算机软件, 奥赛全国决赛一等奖. 08320681450010, 袁敏峰, 男, 江苏省启东中学&nbsp;...</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--n-->
+                                                </li>
+                                            </div>
+                                            <hr class="rgsep"/>
+                                        </ol>
+                                    </div>
+                                    <!--z-->
+                                </div>
+                            </div>
+                            <div data-jibp="h" data-jiis="uc" id="bottomads"></div>
+                            <div class="med" id="extrares" style="padding:0 8px">
+                                <div>
+                                    <div data-jibp="h" data-jiis="uc" id="botstuff">
+                                        <style>
+                                        .mfr {
+                                            margin-top:1em;
+                                            margin-bottom:1em
+                                        }
+                                        #brs {
+                                        }
+                                        #brs .med {
+                                            color:#808080;
+                                            height:auto;
+                                            padding-bottom:7px
+                                        }
+                                        .brs_col {
+                                            display:inline-block;
+                                            font-size:15px;
+                                            margin-top:-1px;
+                                            padding-bottom:1px;
+                                            float:left;
+                                            padding-right:16px;
+                                            line-height:20px
+                                        }
+                                        #brs ._Yx {
+                                            margin:0;
+                                            padding-top:5px;
+                                        }
+                                        .uh_h, .uh_hp, .uh_hv {
+                                            display:none;
+                                            position:fixed
+                                        }
+                                        .uh_h {
+                                            height:0px;
+                                            left:0px;
+                                            top:0px;
+                                            width:0px
+                                        }
+                                        .uh_hv {
+                                            background:#fff;
+                                            border:1px solid #ccc;
+                                            -webkit-box-shadow:0 4px 16px rgba(0, 0, 0, 0.2);
+                                            margin:-8px;
+                                            padding:8px;
+                                            background-color:#fff
+                                        }
+                                        .uh_hp, .uh_hv, #uh_hp.v {
+                                            display:block;
+                                            z-index:5000
+                                        }
+                                        #uh_hp {
+                                            -webkit-box-shadow:0px 2px 4px rgba(0, 0, 0, 0.2);
+                                            display:none;
+                                            opacity:.7;
+                                            position:fixed
+                                        }
+                                        #uh_hpl {
+                                            cursor:pointer;
+                                            display:block;
+                                            height:100%;
+                                            outline-color:-moz-use-text-color;
+                                            outline-style:none;
+                                            outline-width:medium;
+                                            width:100%
+                                        }
+                                        .uh_hi {
+                                            border:0;
+                                            display:block;
+                                            margin:0 auto 4px
+                                        }
+                                        .uh_hx {
+                                            opacity:0.5
+                                        }
+                                        .uh_hx:hover {
+                                            opacity:1
+                                        }
+                                        .uh_hn, .uh_hr, .uh_hs, .uh_ht, .uh_ha {
+                                            margin:0 1px -1px;
+                                            padding-bottom:1px;
+                                            overflow:hidden
+                                        }
+                                        .uh_ht {
+                                            font-size:123%;
+                                            line-height:120%;
+                                            max-height:1.2em;
+                                            word-wrap:break-word
+                                        }
+                                        .uh_hn {
+                                            line-height:120%;
+                                            max-height:2.4em
+                                        }
+                                        .uh_hr {
+                                            color:#093;
+                                            white-space:nowrap
+                                        }
+                                        .uh_hs {
+                                            color:#093;
+                                            white-space:normal
+                                        }
+                                        .uh_ha {
+                                            color:#777;
+                                            white-space:nowrap
+                                        }
+                                        a.uh_hal {
+                                            color:#36c;
+                                            text-decoration:none
+                                        }
+                                        a:hover.uh_hal {
+                                            text-decoration:underline
+                                        }
+                                        </style>
+                                        <div style="clear:both;overflow:hidden;margin-bottom:17px" id="brs">
+                                            <div class="med _yc _ho" style="text-align:left">
+                                                <em>钱康来</em>的相关搜索</div>
+                                            <div class="_p">
+                                                <div class="brs_col">
+                                                    <p class="_Yx"><a href="/search?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E9%92%B1%E6%83%A0%E5%BA%B7&amp;revid=1326858005&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CGAQ1QIoAA">钱惠康</a>
+                                                    </p>
+                                                    <p class="_Yx"><a href="/search?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E9%92%B1%E5%A4%A7%E5%BA%B7&amp;revid=1326858005&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CGEQ1QIoAQ">钱大康</a>
+                                                    </p>
+                                                    <p class="_Yx"><a href="/search?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E9%92%B1%E6%85%A7%E5%BA%B7&amp;revid=1326858005&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CGIQ1QIoAg">钱慧康</a>
+                                                    </p>
+                                                    <p class="_Yx"><a href="/search?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E5%A4%AA%E5%B9%B3%E6%B4%8B%E6%88%BF%E5%B1%8B%E9%92%B1%E5%BA%B7&amp;revid=1326858005&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CGMQ1QIoAw">太平洋房屋钱康</a>
+                                                    </p>
+                                                    <p class="_Yx"><a href="/search?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E5%89%8D%E5%88%97%E5%BA%B7%E5%A4%9A%E5%B0%91%E9%92%B1&amp;revid=1326858005&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CGQQ1QIoBA">前列康多少钱</a>
+                                                    </p>
+                                                </div>
+                                                <div class="brs_col">
+                                                    <p class="_Yx"><a href="/search?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E6%84%9F%E5%BA%B7%E5%A4%9A%E5%B0%91%E9%92%B1&amp;revid=1326858005&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CGUQ1QIoBQ">感康多少钱</a>
+                                                    </p>
+                                                    <p class="_Yx"><a href="/search?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E6%B6%A6%E5%BA%B7%E5%A4%9A%E5%B0%91%E9%92%B1&amp;revid=1326858005&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CGYQ1QIoBg">润康多少钱</a>
+                                                    </p>
+                                                    <p class="_Yx"><a href="/search?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E9%92%B1%E6%83%A0%E5%BA%B7%E7%AE%80%E5%8E%86&amp;revid=1326858005&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CGcQ1QIoBw">钱惠康简历</a>
+                                                    </p>
+                                                    <p class="_Yx"><a href="/search?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E5%BA%B7%E6%B3%B0%E5%85%8B%E5%A4%9A%E5%B0%91%E9%92%B1&amp;revid=1326858005&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CGgQ1QIoCA">康泰克多少钱</a>
+                                                    </p>
+                                                    <p class="_Yx"><a href="/search?newwindow=1&amp;safe=strict&amp;es_sm=119&amp;q=%E9%92%B1%E7%A5%96%E5%BA%B7%E8%AE%BA%E6%96%87&amp;revid=1326858005&amp;sa=X&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;ved=0CGkQ1QIoCQ">钱祖康论文</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="rgsep"/>
+                                        <div id="uh_hp" class="">
+                                            <a href="#" id="uh_hpl"></a>
+                                        </div>
+                                        <div id="uh_h">
+                                            <a id="uh_hl"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div id="foot" role="contentinfo">
+                                    <div data-jibp="h" data-jiis="uc" id="cljs"></div>
+                                    <span data-jibp="h" data-jiis="uc" id="xjs">
+                                        <div id="navcnt">
+                                            <table id="nav" style="border-collapse:collapse;text-align:left;margin:30px auto 30px">
+                                                <tbody>
+                                                    <tr valign="top">
+                                                        <td class="b navend">
+                                                            <span class="csb gbil" style="background:url(/images/nav_logo193_hr.png) no-repeat;background-position:-24px 0;background-size:167px;width:28px"></span>
+                                                        </td>
+                                                        <td class="cur">
+                                                            <span class="csb gbil" style="background:url(/images/nav_logo193_hr.png) no-repeat;background-position:-53px 0;background-size:167px;width:20px"></span>1</td>
+                                                        <td>
+                                                            <a class="fl" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;start=10&amp;sa=N">
+                                                                <span class="csb gbil ch" style="background:url(/images/nav_logo193_hr.png) no-repeat;background-position:-74px 0;background-size:167px;width:20px"></span>2</a>
+                                                        </td>
+                                                        <td>
+                                                            <a class="fl" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;start=20&amp;sa=N">
+                                                                <span class="csb gbil ch" style="background:url(/images/nav_logo193_hr.png) no-repeat;background-position:-74px 0;background-size:167px;width:20px"></span>3</a>
+                                                        </td>
+                                                        <td>
+                                                            <a class="fl" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;start=30&amp;sa=N">
+                                                                <span class="csb gbil ch" style="background:url(/images/nav_logo193_hr.png) no-repeat;background-position:-74px 0;background-size:167px;width:20px"></span>4</a>
+                                                        </td>
+                                                        <td>
+                                                            <a class="fl" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;start=40&amp;sa=N">
+                                                                <span class="csb gbil ch" style="background:url(/images/nav_logo193_hr.png) no-repeat;background-position:-74px 0;background-size:167px;width:20px"></span>5</a>
+                                                        </td>
+                                                        <td>
+                                                            <a class="fl" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;start=50&amp;sa=N">
+                                                                <span class="csb gbil ch" style="background:url(/images/nav_logo193_hr.png) no-repeat;background-position:-74px 0;background-size:167px;width:20px"></span>6</a>
+                                                        </td>
+                                                        <td>
+                                                            <a class="fl" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;start=60&amp;sa=N">
+                                                                <span class="csb gbil ch" style="background:url(/images/nav_logo193_hr.png) no-repeat;background-position:-74px 0;background-size:167px;width:20px"></span>7</a>
+                                                        </td>
+                                                        <td>
+                                                            <a class="fl" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;start=70&amp;sa=N">
+                                                                <span class="csb gbil ch" style="background:url(/images/nav_logo193_hr.png) no-repeat;background-position:-74px 0;background-size:167px;width:20px"></span>8</a>
+                                                        </td>
+                                                        <td>
+                                                            <a class="fl" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;start=80&amp;sa=N">
+                                                                <span class="csb gbil ch" style="background:url(/images/nav_logo193_hr.png) no-repeat;background-position:-74px 0;background-size:167px;width:20px"></span>9</a>
+                                                        </td>
+                                                        <td>
+                                                            <a class="fl" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;start=90&amp;sa=N">
+                                                                <span class="csb gbil ch" style="background:url(/images/nav_logo193_hr.png) no-repeat;background-position:-74px 0;background-size:167px;width:20px"></span>10</a>
+                                                        </td>
+                                                        <td class="b navend">
+                                                            <a class="pn" href="/search?q=%E9%92%B1%E5%BA%B7%E6%9D%A5&amp;newwindow=1&amp;safe=strict&amp;es_sm=119&amp;ei=6kGDU8SXGIm78gWPr4C4DA&amp;start=10&amp;sa=N" id="pnnext" style="text-decoration:none;text-align:left">
+                                                                <span class="csb gbil ch" style="background:url(/images/nav_logo193_hr.png) no-repeat;background-position:-96px 0;background-size:167px;width:71px"></span>
+                                                                <span style="display:block;margin-left:53px">下一页</span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </span>
+                                    <div data-jibp="h" data-jiis="uc" id="gfn"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div data-jibp="h" data-jiis="uc" id="rhscol">
+                            <div id="rhs">
+                                <div id="rhs_block" class=" rhstc5">
+                                    <script>
+                                    (function() {
+                                        var c4 = 1072;
+                                        var c5 = 1160;
+                                        var bc = 1250;
+                                        var bd = 0;
+                                        try {
+                                            var w = document.body.offsetWidth,
+                                                n = 3;
+                                            if (w > bc) {
+                                                c4 += bd;
+                                                c5 += bd;
+                                            }
+                                            if (w >= c4) n = w < c5 ? 4 : 5;
+                                            document.getElementById('rhs_block').className += ' rhstc' + n;
+                                        } catch (e) {}
+                                    })();
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+                </div>
+                <div data-jibp="h" data-jiis="uc" id="bfoot">
+                    <div id="nyc" role="dialog" style="display:none" class="rhstc5">
+                        <div id="nycp">
+                            <div id="nycxh">
+                                <button title="隐藏结果详情" id="nycx"></button>
+                            </div>
+                            <div id="nycntg"></div>
+                            <div id="nycpp">
+                                <div style="position:absolute;left:0;right:0;text-align:center;top:45%">
+                                    <img id="nycli"/>
+                                    <div id="nycm"></div>
+                                </div>
+                                <div id="nycprv"></div>
+                            </div>
+                        </div>
+                        <div id="nyccur"></div>
+                    </div>
+                    <div id="nycf"></div>
+                </div>
+                <div data-jibp="h" data-jiis="uc" id="hbce"></div>
+            </div>
+            <div id="footcnt">
+                <div>
+                    <style>
+                    .fmulti {
+                    }
+                    ._hq {
+                        bottom:0;
+                        left:0;
+                        position:absolute;
+                        right:0
+                    }
+                    ._zi {
+                        background:#f2f2f2;
+                        bottom:0;
+                        left:0;
+                        position:absolute;
+                        right:0;
+                        -webkit-text-size-adjust:none
+                    }
+                    .fbar p {
+                        display:inline
+                    }
+                    .fbar a, #fsettl {
+                        text-decoration:none;
+                        white-space:nowrap
+                    }
+                    .fbar ._Se {
+                        padding:0 0 0 27px !important;
+                        margin:0 !important
+                    }
+                    .fbar ._Sh {
+                        padding:0 !important;
+                        margin:0 !important
+                    }
+                    ._ih a:hover {
+                        text-decoration:underline
+                    }
+                    ._hd img {
+                        margin-right:4px
+                    }
+                    ._hd a, ._zi #swml a {
+                        text-decoration:none
+                    }
+                    .fmulti {
+                        text-align:center
+                    }
+                    .fmulti #fsr {
+                        display:block;
+                        float:none
+                    }
+                    .fmulti #fuser {
+                        display:block;
+                        float:none
+                    }
+                    #fuserm {
+                        line-height:25px
+                    }
+                    #fsr {
+                        float:right;
+                        white-space:nowrap
+                    }
+                    #fsl {
+                        white-space:nowrap
+                    }
+                    #fsett {
+                        background:#fff;
+                        border:1px solid #999;
+                        bottom:30px;
+                        padding:10px 0;
+                        position:absolute;
+                        box-shadow:0 2px 4px rgba(0, 0, 0, 0.2);
+                        -webkit-box-shadow:0 2px 4px rgba(0, 0, 0, 0.2);
+                        text-align:left;
+                        z-index:100
+                    }
+                    #fsett a {
+                        display:block;
+                        line-height:44px;
+                        padding:0 20px;
+                        text-decoration:none;
+                        white-space:nowrap
+                    }
+                    ._ih #fsettl:hover {
+                        text-decoration:underline
+                    }
+                    ._ih #fsett a:hover {
+                        text-decoration:underline
+                    }
+                    ._Qb {
+                        color:#777
+                    }
+                    ._bc {
+                        color:#222;
+                        font-size:14px;
+                        font-weight:normal;
+                        -webkit-tap-highlight-color:rgba(0, 0, 0, 0)
+                    }
+                    ._bc:hover, ._bc:active {
+                        color:#444
+                    }
+                    ._ae {
+                        display:inline-block;
+                        position:relative
+                    }
+                    ._Cc, ._sd {
+                        height:13px;
+                        width:8px
+                    }
+                    ._Cc:before, ._sd:before {
+                        border:8px solid rgba(255, 255, 255, 0);
+                        border-radius:8px;
+                        content:'';
+                        position:absolute
+                    }
+                    ._Cc:before {
+                        border-left:8px solid #777;
+                        left:1px
+                    }
+                    ._sd:before {
+                        border-right:8px solid #777;
+                        left:-9px
+                    }
+                    ._Cc:after, ._sd:after {
+                        border:12px solid rgba(255, 255, 255, 0);
+                        content:'';
+                        position:absolute;
+                        top:-4px
+                    }
+                    ._Cc:after {
+                        border-left:10px solid #f6f6f6;
+                        left:-4px
+                    }
+                    ._sd:after {
+                        border-right:10px solid #f6f6f6;
+                        left:-10px
+                    }
+                    ._ak ._Cc:after {
+                        border-left:10px solid white
+                    }
+                    ._ak ._sd:after {
+                        border-right:10px solid white
+                    }
+                    ._bc {
+                        padding:8px 16px;
+                        margin-right:10px
+                    }
+                    ._Qb {
+                        margin:40px 0
+                    }
+                    ._Qg {
+                        margin-right:10px
+                    }
+                    ._iq {
+                        margin-left:135px
+                    }
+                    .fbar {
+                        background:#f2f2f2;
+                        border-top:1px solid #e4e4e4;
+                        line-height:40px;
+                        min-width:980px
+                    }
+                    ._gq {
+                        margin-left:135px
+                    }
+                    .fbar p, .fbar a, #fsettl, #fsett a {
+                        color:#777
+                    }
+                    .fbar a:hover, #fsett a:hover {
+                        color:#333
+                    }
+                    .fbar {
+                        font-size:small
+                    }
+                    #fuser {
+                        float:right
+                    }
+                    </style>
+                    <div id="fbarcnt" style="position: relative; visibility: visible; display: block; height: 41px;">
+                        <div id="fbar" style="position:absolute;bottom:0;left:0;right:0">
+                            <div class="fbar">
+                                <span class="_iq">
+                                    <span id="fsl"> <a class="_Sh" href="//support.google.com/websearch/?p=ws_results_help&amp;hl=zh-CN&amp;fg=1">帮助</a>  <a class="_Se" href="javascript:void(0)" data-bucket="websearch" jsaction="gf.sf" id="_HY" target="_blank" data-ved="0CG4QLg">  发送反馈 </a>  <a class="_Se" href="/intl/zh-CN/policies/?fg=1">隐私权和使用条款</a> 
+                                        <span class="_Se" data-jibp="h" data-jiis="uc" id="fescapehatch"> <a href="https://www.google.com.hk/setprefdomain?prefdom=US&amp;prev=https://www.google.com/search?newwindow%3D1%26safe%3Dstrict%26es_sm%3D119%26q%3D%25E9%2592%25B1%25E5%25BA%25B7%25E6%259D%25A5%26oq%3D%25E9%2592%25B1%25E5%25BA%25B7%25E6%259D%25A5%26gs_l%3Dserp.3...1539396.1541876.0.1542030.15.11.4.0.0.0.151.932.1j7.8.0....0...1c.1j4.45.serp..7.8.506.0.4GlvEg_r0a8&amp;sig=0_0cTXAcga8WK_Gtj51dr7P6HBX1k%3D&amp;fg=1">使用Google.com</a> 
+                                        </span>
+                                        <span data-jibp="h" data-jiis="uc" id="fbbv"></span>
+                                        <span data-jibp="h" data-jiis="uc" id="fbsh"></span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+            .hdtbU {
+                top:-500px;
+                white-space:nowrap
+            }
+            .hdtbU .hdtbItm, .hdtbU li {
+                list-style:none outside none
+            }
+            #hdtb form {
+                display:inline
+            }
+            .hdtbSel, .hdtbSel span.q {
+                color:#000;
+                cursor:default;
+                padding-right:15px;
+                text-decoration:none
+            }
+            #cdr_opt {
+                background-image:none;
+                background:#fff;
+                padding:0 !important
+            }
+            .cdr_sep {
+                border-top:1px solid #ebebeb;
+                height:0;
+                margin:5px 0;
+                width:100%
+            }
+            #cdrlnk {
+                cursor:pointer
+            }
+            .hdtbItm {
+                background:#fff
+            }
+            .hdtbSel, .hdtbSel #cdrlnk {
+                background-image:url(//ssl.gstatic.com/ui/v1/menu/checkmark2.png);
+                background-position:left center;
+                background-repeat:no-repeat
+            }
+            .hdtb-mn-cont {
+                height:22px;
+                white-space:nowrap
+            }
+            .hdtb-mn-hd {
+                color:#777;
+                display:inline-block;
+                position:relative;
+                padding-top:0;
+                padding-bottom:0;
+                padding-right:22px;
+                padding-left:16px;
+                line-height:22px;
+                cursor:pointer
+            }
+            #hdtb-mn-gp {
+                display:inline-block;
+            }
+            .hdtb-loc {
+                border-top:1px solid #ebebeb;
+                padding-bottom:10px;
+                padding-right:16px;
+                padding-top:15px;
+                padding-left:27px
+            }
+            .hdtb-loc .ksb.mini {
+                margin-top:0
+            }
+            </style>
+            <div data-jibp="h" data-jiis="uc" id="bpsw"></div>
+            <div id="xfootw" data-jiis="bp">
+                <div data-jibp="h" data-jiis="uc" id="xfoot">
+                    <div id="xjsd">
+                        <script src="/xjs/_/js/k=xjs.s.en_US.u4s5c7_Kv3Q.O/m=sx,c,sb,cr,elog,jsa,r,hsm,pcc,csi/am=Efw_FQY9ooCEwCo/rt=j/d=1/sv=1/t=zcms/rs=AItRSTPGnCrBEAYq1poU3r7jJCUJf1ptCg"></script>
+                    </div>
+                    <div id="xjsi" data-jiis="bp">
+                        <script>
+                        if (google.y) google.y.first = [];
+                        (function() {
+                            function b(a) {
+                                window.setTimeout(function() {
+                                    var c = document.createElement("script");
+                                    c.src = a;
+                                    document.getElementById("xjsd").appendChild(c)
+                                }, 0)
+                            }
+                            google.dljp = function(a) {
+                                google.xjsu = a;
+                                b(a)
+                            };
+                            google.dlj = b;
+                        })();
+                        if (!google.xjs) {
+                            window._ = window._ || {};
+                            window._._DumpException = function(e) {
+                                throw e
+                            };
+                            if (google.timers && google.timers.load.t) {
+                                google.timers.load.t.xjsls = new Date().getTime();
+                            }
+                            google.dljp('/xjs/_/js/k\x3dxjs.s.en_US.u4s5c7_Kv3Q.O/m\x3dsx,c,sb,cr,elog,jsa,r,hsm,pcc,csi/am\x3dEfw_FQY9ooCEwCo/rt\x3dj/d\x3d1/sv\x3d1/t\x3dzcms/rs\x3dAItRSTPGnCrBEAYq1poU3r7jJCUJf1ptCg');
+                            google.xjs = 1;
+                        }
+                        google.sn = 'web';
+                        google.pmc = {
+                            "sx": {},
+                            "c": {
+                                "mcr": 5
+                            },
+                            "sb": {
+                                "agen": false,
+                                "cgen": true,
+                                "client": "serp",
+                                "dh": true,
+                                "ds": "",
+                                "eqch": true,
+                                "fl": true,
+                                "fpol": true,
+                                "host": "google.com.hk",
+                                "jam": 1,
+                                "msgs": {
+                                    "che": "发生错误，无法收听。",
+                                    "ched": "帮助",
+                                    "cher": "重新启动收听",
+                                    "chh": "请说“OK Google”",
+                                    "cht": "启动指令检测功能已关闭。",
+                                    "chtr": "开始收听“Ok Google”",
+                                    "chtt": "正在收听“Ok Google”",
+                                    "cibl": "清除搜索",
+                                    "dym": "您是不是要找：",
+                                    "lcky": "\u0026nbsp;手气不错\u0026nbsp;",
+                                    "lml": "了解详情",
+                                    "oskt": "输入工具",
+                                    "psrc": "该搜索已从您的\u003Ca href=\"/history\"\u003E网络历史记录\u003C/a\u003E中删除",
+                                    "psrl": "删除",
+                                    "sbit": "按图片搜索",
+                                    "srae": "请检查您的麦克风。\u003Ca href=\"https://support.google.com/chrome/?p=ui_voice_search\" target=\"_blank\"\u003E了解详情\u003C/a\u003E",
+                                    "srch": "Google 搜索",
+                                    "sril": "zh_Hans_CN",
+                                    "srim": "点击\u003Cb\u003E允许\u003C/b\u003E开始语音搜索",
+                                    "sriw": "正在等待...",
+                                    "srlm": "正在收听…",
+                                    "srlu": "目前尚未提供%1$s版语音搜索服务",
+                                    "srne": "未连接到互联网",
+                                    "srnt": "不确定所说内容，\u003Cspan\u003E请重试\u003C/span\u003E",
+                                    "srnv": "请检查您的麦克风和音频电平。\u003Ca href=\"https://support.google.com/chrome/?p=ui_voice_search\" target=\"_blank\"\u003E了解详情\u003C/a\u003E",
+                                    "srpe": "语音搜索功能处于关闭状态。\u003Ca href=\"https://support.google.com/chrome/?p=ui_voice_search\" target=\"_blank\"\u003E详细信息\u003C/a\u003E",
+                                    "srrm": "请开始说话",
+                                    "srtt": "按语音搜索"
+                                },
+                                "ovr": {},
+                                "pfof": true,
+                                "pq": "钱康来",
+                                "qcpw": false,
+                                "scd": 10,
+                                "sce": 4,
+                                "sre": true,
+                                "stok": "pfuQ0pRKrmzgP8jmtMo1PgTHYYw",
+                                "token": "T7PUK_P4LAbkj5hQWbfQmw",
+                                "uwsa": true
+                            },
+                            "abd": {
+                                "abd": false,
+                                "dabp": false,
+                                "deb": false,
+                                "der": false,
+                                "det": false,
+                                "psa": false,
+                                "sup": false
+                            },
+                            "adp": {},
+                            "am": {},
+                            "async": {
+                                "act": false
+                            },
+                            "cdos": {
+                                "bih": 779,
+                                "biw": 1440,
+                                "dima": "b",
+                                "dpr": "2",
+                                "sdpr": 1
+                            },
+                            "cr": {
+                                "eup": true,
+                                "qir": false,
+                                "rctj": true,
+                                "ref": false,
+                                "uff": false
+                            },
+                            "ddls": {},
+                            "elog": {},
+                            "flst": {},
+                            "foot": {
+                                "pf": true,
+                                "po": false
+                            },
+                            "gf": {
+                                "pid": 196,
+                                "si": true
+                            },
+                            "hv": {},
+                            "idck": {},
+                            "jsa": {},
+                            "jsaleg": {},
+                            "lc": {},
+                            "llc": {},
+                            "lorw": {},
+                            "lu": {
+                                "cm_hov": true,
+                                "uab": true
+                            },
+                            "m": {
+                                "ab": {
+                                    "on": true
+                                },
+                                "ajax": {
+                                    "gl": "cn",
+                                    "hl": "zh-CN",
+                                    "q": "钱康来"
+                                },
+                                "css": {
+                                    "showTopNav": true
+                                },
+                                "exp": {
+                                    "kvs": true,
+                                    "lrb": false,
+                                    "tnav": true
+                                },
+                                "msgs": {
+                                    "details": "结果详情",
+                                    "hPers": "隐藏私人搜索结果",
+                                    "hPersD": "目前隐藏了私人搜索结果",
+                                    "loading": "仍在加载...",
+                                    "mute": "静音",
+                                    "noPreview": "无法预览",
+                                    "sPers": "显示所有搜索结果",
+                                    "sPersD": "目前显示的是私人搜索结果",
+                                    "unmute": "取消静音"
+                                },
+                                "nokjs": {
+                                    "on": true
+                                },
+                                "time": {
+                                    "hUnit": 1500
+                                }
+                            },
+                            "me": {
+                                "bnOn": false,
+                                "js": true,
+                                "rhs4Col": 1072,
+                                "rhs5Col": 1160,
+                                "rhsOn": true
+                            },
+                            "r": {},
+                            "riu": {
+                                "cnfrm": "已举报",
+                                "prmpt": "举报"
+                            },
+                            "rk": {
+                                "bl": "反馈",
+                                "db": "已报告",
+                                "di": "非常感谢。",
+                                "dl": "报告其他问题",
+                                "efe": true,
+                                "rb": "有错误？",
+                                "ri": "请报告问题。",
+                                "rl": "取消"
+                            },
+                            "rkab": {},
+                            "rmcl": {
+                                "bl": "反馈",
+                                "db": "已报告",
+                                "di": "非常感谢。",
+                                "dl": "报告其他问题",
+                                "rb": "有错误？",
+                                "ri": "请报告问题。",
+                                "rl": "取消"
+                            },
+                            "sf": {},
+                            "shlb": {},
+                            "spch": {
+                                "ae": "请检查您的麦克风。\u003Ca href=\"https://support.google.com/chrome/?p=ui_voice_search\" target=\"_blank\"\u003E了解详情\u003C/a\u003E",
+                                "hen": true,
+                                "hl": "zh-Hans-CN",
+                                "htt": "正在收听“Ok Google”",
+                                "im": "点击\u003Cb\u003E允许\u003C/b\u003E开始语音搜索",
+                                "iw": "正在等待...",
+                                "lm": "正在收听…",
+                                "lu": "目前尚未提供%1$s版语音搜索服务",
+                                "ne": "未连接到互联网",
+                                "nt": "不确定所说内容，\u003Cspan\u003E请重试\u003C/span\u003E",
+                                "nv": "请检查您的麦克风和音频电平。\u003Ca href=\"https://support.google.com/chrome/?p=ui_voice_search\" target=\"_blank\"\u003E了解详情\u003C/a\u003E",
+                                "pe": "语音搜索功能处于关闭状态。\u003Ca href=\"https://support.google.com/chrome/?p=ui_voice_search\" target=\"_blank\"\u003E详细信息\u003C/a\u003E",
+                                "rm": "请开始说话"
+                            },
+                            "st": {},
+                            "tbui": {
+                                "dfi": {
+                                    "AM": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+                                    "NW": ["日", "一", "二", "三", "四", "五", "六"],
+                                    "SW": ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+                                    "WM": ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+                                    "am": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+                                    "df": ["y年M月d日EEEE", "y年M月d日", "y年M月d日", "yyyy/M/d"],
+                                    "dp_MMMMy": "y年M月",
+                                    "fdow": 6,
+                                    "nw": ["日", "一", "二", "三", "四", "五", "六"],
+                                    "sw": ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+                                    "wm": ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"]
+                                },
+                                "m": {
+                                    "app": true,
+                                    "bks": true,
+                                    "blg": true,
+                                    "dsc": true,
+                                    "fin": true,
+                                    "flm": true,
+                                    "frm": true,
+                                    "isch": true,
+                                    "klg": true,
+                                    "map": true,
+                                    "mobile": true,
+                                    "nws": true,
+                                    "plcs": true,
+                                    "ppl": true,
+                                    "prc": true,
+                                    "pts": true,
+                                    "rcp": true,
+                                    "shop": true,
+                                    "vid": true
+                                },
+                                "t": null
+                            },
+                            "tnv": {
+                                "m": false,
+                                "ms": false,
+                                "t": false
+                            },
+                            "ttbcdr": {
+                                "m": false
+                            },
+                            "vs": {},
+                            "wta": {
+                                "s": true
+                            },
+                            "hsm": {},
+                            "pcc": {},
+                            "csi": {
+                                "acsi": true
+                            },
+                            "hLaaFQ": {
+                                "ed": "请加以说明。",
+                                "eu": "请输入有效的网址。"
+                            },
+                            "zF4mTg": {},
+                            "/nNC3A": {},
+                            "TG8rFw": {},
+                            "2WcKhg": {},
+                            "v3wifQ": {},
+                            "c+PT4g": {},
+                            "/1S6iw": {},
+                            "GqeGtQ": {},
+                            "ADSBcg": {},
+                            "BwDLOw": {},
+                            "8aqNqA": {},
+                            "vitigA": {},
+                            "A/Ucpg": {},
+                            "63G1zA": {}
+                        };
+                        google.y.first.push(function() {
+                            try {
+                                google.loadAll(['abd', 'adp', 'async', 'cdos', 'foot', 'gf', 'hv', 'idck', 'jsaleg', 'lc', 'lu', 'm', 'me', 'sf', 'spch', 'tbui', 'tnv', 'vs', 'wta']);
+                                (function() {
+                                    window.jsl = window.jsl || {};
+                                    window.jsl.dh = window.jsl.dh || function(i, c, d) {
+                                        var e = document.getElementById(i);
+                                        if (e) {
+                                            e.innerHTML = c;
+                                            if (d) {
+                                                d();
+                                            }
+                                        }
+                                    };
+                                })();
+                                (function() {
+                                    window.jsl.dh('hdtbMenus', '\x3cdiv class\x3d\x22hdtb-mn-cont\x22\x3e\x3cdiv id\x3d\x22hdtb-mn-gp\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22hdtb-mn-hd\x22 aria-haspopup\x3d\x22true\x22 role\x3d\x22button\x22 tabindex\x3d\x220\x22\x3e\x3cdiv class\x3d\x22mn-hd-txt\x22\x3e\u4e0d\u9650\u8bed\u8a00\x3c/div\x3e\x3cspan class\x3d\x22mn-dwn-arw\x22\x3e\x3c/span\x3e\x3c/div\x3e\x3cul class\x3d\x22hdtbU hdtb-mn-c\x22\x3e\x3cli class\x3d\x22hdtbItm hdtbSel\x22 id\x3dlr_ tabindex\x3d\x220\x22\x3e\u4e0d\u9650\u8bed\u8a00\x3c/li\x3e\x3cli class\x3d\x22hdtbItm\x22 id\x3dlr_lang_1zh-CN_lang_1zh-TW\x3e\x3ca class\x3d\x22q qs\x22 href\x3d\x22/search?q\x3d%E9%92%B1%E5%BA%B7%E6%9D%A5\x26amp;newwindow\x3d1\x26amp;safe\x3dstrict\x26amp;es_sm\x3d119\x26amp;source\x3dlnt\x26amp;tbs\x3dlr:lang_1zh-CN%7Clang_1zh-TW\x26amp;lr\x3dlang_zh-CN%7Clang_zh-TW\x26amp;sa\x3dX\x26amp;ei\x3d6kGDU8SXGIm78gWPr4C4DA\x26amp;ved\x3d0CBUQpwUoAQ\x22\x3e\u6240\u6709\u4e2d\u6587\u7f51\u9875\x3c/a\x3e\x3c/li\x3e\x3cli class\x3d\x22hdtbItm\x22 id\x3dlr_lang_1zh-CN\x3e\x3ca class\x3d\x22q qs\x22 href\x3d\x22/search?q\x3d%E9%92%B1%E5%BA%B7%E6%9D%A5\x26amp;newwindow\x3d1\x26amp;safe\x3dstrict\x26amp;es_sm\x3d119\x26amp;source\x3dlnt\x26amp;tbs\x3dlr:lang_1zh-CN\x26amp;lr\x3dlang_zh-CN\x26amp;sa\x3dX\x26amp;ei\x3d6kGDU8SXGIm78gWPr4C4DA\x26amp;ved\x3d0CBYQpwUoAg\x22\x3e\u7b80\u4f53\u4e2d\u6587\u7f51\u9875\x3c/a\x3e\x3c/li\x3e\x3c/ul\x3e\x3cdiv class\x3d\x22hdtb-mn-hd\x22 aria-haspopup\x3d\x22true\x22 role\x3d\x22button\x22 tabindex\x3d\x220\x22\x3e\x3cdiv class\x3d\x22mn-hd-txt\x22\x3e\u65f6\u95f4\u4e0d\u9650\x3c/div\x3e\x3cspan class\x3d\x22mn-dwn-arw\x22\x3e\x3c/span\x3e\x3c/div\x3e\x3cul class\x3d\x22hdtbU hdtb-mn-c\x22\x3e\x3cli class\x3d\x22hdtbItm hdtbSel\x22 id\x3dqdr_ tabindex\x3d\x220\x22\x3e\u65f6\u95f4\u4e0d\u9650\x3c/li\x3e\x3cli class\x3d\x22hdtbItm\x22 id\x3dqdr_h\x3e\x3ca class\x3d\x22q qs\x22 href\x3d\x22/search?q\x3d%E9%92%B1%E5%BA%B7%E6%9D%A5\x26amp;newwindow\x3d1\x26amp;safe\x3dstrict\x26amp;es_sm\x3d119\x26amp;source\x3dlnt\x26amp;tbs\x3dqdr:h\x26amp;sa\x3dX\x26amp;ei\x3d6kGDU8SXGIm78gWPr4C4DA\x26amp;ved\x3d0CBkQpwUoAQ\x22\x3e \u8fc7\u53bb 1 \u5c0f\u65f6\u5185\x3c/a\x3e\x3c/li\x3e\x3cli class\x3d\x22hdtbItm\x22 id\x3dqdr_d\x3e\x3ca class\x3d\x22q qs\x22 href\x3d\x22/search?q\x3d%E9%92%B1%E5%BA%B7%E6%9D%A5\x26amp;newwindow\x3d1\x26amp;safe\x3dstrict\x26amp;es_sm\x3d119\x26amp;source\x3dlnt\x26amp;tbs\x3dqdr:d\x26amp;sa\x3dX\x26amp;ei\x3d6kGDU8SXGIm78gWPr4C4DA\x26amp;ved\x3d0CBoQpwUoAg\x22\x3e \u8fc7\u53bb 24 \u5c0f\u65f6\u5185\x3c/a\x3e\x3c/li\x3e\x3cli class\x3d\x22hdtbItm\x22 id\x3dqdr_w\x3e\x3ca class\x3d\x22q qs\x22 href\x3d\x22/search?q\x3d%E9%92%B1%E5%BA%B7%E6%9D%A5\x26amp;newwindow\x3d1\x26amp;safe\x3dstrict\x26amp;es_sm\x3d119\x26amp;source\x3dlnt\x26amp;tbs\x3dqdr:w\x26amp;sa\x3dX\x26amp;ei\x3d6kGDU8SXGIm78gWPr4C4DA\x26amp;ved\x3d0CBsQpwUoAw\x22\x3e \u8fc7\u53bb 1 \u5468\u5185\x3c/a\x3e\x3c/li\x3e\x3cli class\x3d\x22hdtbItm\x22 id\x3dqdr_m\x3e\x3ca class\x3d\x22q qs\x22 href\x3d\x22/search?q\x3d%E9%92%B1%E5%BA%B7%E6%9D%A5\x26amp;newwindow\x3d1\x26amp;safe\x3dstrict\x26amp;es_sm\x3d119\x26amp;source\x3dlnt\x26amp;tbs\x3dqdr:m\x26amp;sa\x3dX\x26amp;ei\x3d6kGDU8SXGIm78gWPr4C4DA\x26amp;ved\x3d0CBwQpwUoBA\x22\x3e \u8fc7\u53bb 1 \u4e2a\u6708\u5185\x3c/a\x3e\x3c/li\x3e\x3cli class\x3d\x22hdtbItm\x22 id\x3dqdr_y\x3e\x3ca class\x3d\x22q qs\x22 href\x3d\x22/search?q\x3d%E9%92%B1%E5%BA%B7%E6%9D%A5\x26amp;newwindow\x3d1\x26amp;safe\x3dstrict\x26amp;es_sm\x3d119\x26amp;source\x3dlnt\x26amp;tbs\x3dqdr:y\x26amp;sa\x3dX\x26amp;ei\x3d6kGDU8SXGIm78gWPr4C4DA\x26amp;ved\x3d0CB0QpwUoBQ\x22\x3e \u8fc7\u53bb 1 \u5e74\u5185\x3c/a\x3e\x3c/li\x3e\x3cli class\x3d\x22hdtbItm\x22 id\x3dcdr_opt\x3e\x3cdiv class\x3d\x22cdr_sep\x22\x3e\x3c/div\x3e\x3cspan class\x3d\x22q\x22 jsaction\x3d\x22ttbcdr.showCal\x22 id\x3d\x22cdrlnk\x22 tabindex\x3d\x220\x22 data-ved\x3d\x220CB4QpwUoBg\x22\x3e\u81ea\u5b9a\u65e5\u671f\u8303\u56f4...\x3c/span\x3e\x3cdiv class\x3d\x22cdr_cont\x22 style\x3d\x22display:none\x22\x3e\x3cdiv class\x3d\x22cdr_bg\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22cdr_dlg\x22\x3e\x3cdiv class\x3d\x22cdr_ttl\x22\x3e\u81ea\u5b9a\u65e5\u671f\u8303\u56f4\x3c/div\x3e\x3clabel class\x3d\x22cdr_mml cdr_minl\x22 for\x3d\x22cdr_min\x22\x3e\u4ece\x3c/label\x3e\x3clabel class\x3d\x22cdr_mml cdr_maxl\x22 for\x3d\x22cdr_max\x22\x3e\u81f3\x3c/label\x3e\x3cdiv class\x3d\x22cdr_cls\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22cdr_sft\x22\x3e\x3cdiv class\x3d\x22cdr_highl\x22\x3e\x3c/div\x3e\x3cform action\x3d\x22/search\x22 class\x3d\x22cdr_frm\x22 method\x3d\x22get\x22\x3e\x3cinput type\x3dhidden name\x3dq value\x3d\x22\u94b1\u5eb7\u6765\x22\x3e\x3cinput type\x3dhidden name\x3dnewwindow value\x3d\x221\x22\x3e\x3cinput type\x3dhidden name\x3dsafe value\x3d\x22strict\x22\x3e\x3cinput type\x3dhidden name\x3des_sm value\x3d\x22119\x22\x3e\x3cinput name\x3d\x22source\x22 type\x3d\x22hidden\x22 value\x3d\x22lnt\x22\x3e\x3cinput value\x3d\x22cdr:1,cd_min:x,cd_max:x\x22 class\x3d\x22ctbs\x22 name\x3d\x22tbs\x22 type\x3d\x22hidden\x22\x3e\x3cinput value\x3d\x22\x22 name\x3d\x22tbm\x22 type\x3d\x22hidden\x22\x3e\x3cinput type\x3d\x22text\x22 value\x3d\x22\x22 class\x3d\x22ktf mini cdr_mm cdr_min\x22 autocomplete\x3d\x22off\x22 tabindex\x3d\x221\x22\x3e\x3cinput type\x3d\x22text\x22 value\x3d\x22\x22 class\x3d\x22ktf mini cdr_mm cdr_max\x22 autocomplete\x3d\x22off\x22 tabindex\x3d\x221\x22\x3e\x3cinput class\x3d\x22ksb mini cdr_go\x22 value\x3d\x22\u5f00\u59cb\u641c\u7d22\x22 jsaction\x3d\x22tbt.scf\x22 tabindex\x3d\x221\x22 type\x3d\x22submit\x22\x3e\x3c/form\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/li\x3e\x3c/ul\x3e\x3cdiv class\x3d\x22hdtb-mn-hd\x22 aria-haspopup\x3d\x22true\x22 role\x3d\x22button\x22 tabindex\x3d\x220\x22\x3e\x3cdiv class\x3d\x22mn-hd-txt\x22\x3e\u6240\u6709\u7ed3\u679c\x3c/div\x3e\x3cspan class\x3d\x22mn-dwn-arw\x22\x3e\x3c/span\x3e\x3c/div\x3e\x3cul class\x3d\x22hdtbU hdtb-mn-c\x22\x3e\x3cli class\x3d\x22hdtbItm hdtbSel\x22 id\x3dwhv_ tabindex\x3d\x220\x22\x3e\u6240\u6709\u7ed3\u679c\x3c/li\x3e\x3cli class\x3d\x22hdtbItm\x22 id\x3dfrim_1\x3e\x3ca class\x3d\x22q qs\x22 href\x3d\x22/search?q\x3d%E9%92%B1%E5%BA%B7%E6%9D%A5\x26amp;newwindow\x3d1\x26amp;safe\x3dstrict\x26amp;es_sm\x3d119\x26amp;source\x3dlnt\x26amp;tbs\x3dfrim:1\x26amp;sa\x3dX\x26amp;ei\x3d6kGDU8SXGIm78gWPr4C4DA\x26amp;ved\x3d0CCEQpwUoAQ\x22\x3e\u79c1\u4eba\x3c/a\x3e\x3c/li\x3e\x3cli class\x3d\x22hdtbItm\x22 id\x3dli_1\x3e\x3ca class\x3d\x22q qs\x22 href\x3d\x22/search?q\x3d%E9%92%B1%E5%BA%B7%E6%9D%A5\x26amp;newwindow\x3d1\x26amp;safe\x3dstrict\x26amp;es_sm\x3d119\x26amp;source\x3dlnt\x26amp;tbs\x3dli:1\x26amp;sa\x3dX\x26amp;ei\x3d6kGDU8SXGIm78gWPr4C4DA\x26amp;ved\x3d0CCIQpwUoAg\x22\x3e\u7cbe\u786e\u5339\u914d\x3c/a\x3e\x3c/li\x3e\x3c/ul\x3e\x3c/div\x3e');
+                                })();
+                            } catch (e) {
+                                google.ml(e, false, {
+                                    'cause': 'defer'
+                                });
+                            }
+                            if (google.med) {
+                                google.med('init');
+                                google.initHistory();
+                                google.med('history');
+                            }
+                        });
+                        if (google.j && google.j.en && google.j.xi) {
+                            window.setTimeout(google.j.xi, 0);
+                        }
+                        </script>
+                    </div>
+                    <script>
+                    (function() {
+                        if (google.timers && google.timers.load.t) {
+                            var b, c, d, e, g = function(a, f) {
+                                    a.removeEventListener ? (a.removeEventListener("load", f, !1), a.removeEventListener("error", f, !1)) : (a.detachEvent("onload", f), a.detachEvent("onerror", f))
+                                }, h = function(a) {
+                                    e = (new Date).getTime();
+                                    ++c;
+                                    a = a || window.event;
+                                    a = a.target || a.srcElement;
+                                    g(a, h)
+                                }, k = document.getElementsByTagName("img");
+                            b = k.length;
+                            for (var l = c = 0, m; l < b; ++l) {
+                                m = k[l];
+                                m.complete || "string" != typeof m.src || !m.src ? ++c : m.addEventListener ? (m.addEventListener("load", h, !1), m.addEventListener("error", h, !1)) : (m.attachEvent("onload", h), m.attachEvent("onerror", h))
+                            }
+                            d = b - c;
+                            var n = function() {
+                                if (google.timers.load.t) {
+                                    google.timers.load.t.ol = (new Date).getTime();
+                                    google.timers.load.t.iml = e;
+                                    google.kCSI.imc = c;
+                                    google.kCSI.imn = b;
+                                    google.kCSI.imp = d;
+                                    void 0 !== google.stt && (google.kCSI.stt =
+                                        google.stt);
+                                    google.csiReport && google.csiReport()
+                                }
+                            };
+                            window.addEventListener ? window.addEventListener("load", n, !1) : window.attachEvent && window.attachEvent("onload", n);
+                            google.timers.load.t.prt = e = (new Date).getTime()
+                        };
+                    })();
+                    </script>
+                </div>
+            </div>
+            <div data-jibp="h" data-jiis="uc" id="lfoot"></div>
+        </div>
+        <div data-jiis="up" data-async-type="reviewDialog" id="reviewDialog" class="y yp" data-ved="0CHEQxCw"></div>
+    </div>
+    <script>
+    window.gbar && gbar.up && gbar.up.tp && gbar.up.tp();
+    </script>
+    <script src="//ssl.gstatic.com/gb/js/sem_25adf0e43fdab444c09da6077bec6389.js" async=""></script>
+    <script src="/xjs/_/js/k=xjs.s.en_US.u4s5c7_Kv3Q.O/m=sy69,abd,sy147,adp,sy24,sy25,sy26,sy28,sy19,sy27,sy29,sy33,sy46,sy45,async,sy20,sy21,cdos,foot,sy81,gf,sy133,hv,idck,sy23,jsaleg,sy60,lc,sy70,sy71,sy243,lu,sy246,m,me,sf,sy64,sy42,sy63,sy110,sy65,sy40,sy111,sy90,sy66,sy125,sy41,sy97,sy112,sy154,sy76,sy85,sy91,sy122,sy123,sy127,sy150,sy152,sy153,sy151,spch,tbui,sy50,sy47,sy51,sy53,sy55,sy61,sy48,sy52,sy56,em4,em5,em6,sy49,sy54,tnv,sy82,sy102,vs,sy176,wta/am=Efw_FQY9ooCEwCo/rt=j/d=0/sv=1/t=zcms/rs=AItRSTPGnCrBEAYq1poU3r7jJCUJf1ptCg" type="text/javascript"></script>
+    <table cellspacing="0" cellpadding="0" class="gstl_0 gssb_c" style="width: 570px; display: none; top: 79px; position: absolute; left: 127px;">
+        <tbody>
+            <tr>
+                <td class="gssb_f"></td>
+                <td class="gssb_e" style="width: 100%;"></td>
+            </tr>
+        </tbody>
+    </table>
+    <style type="text/css">
+    #nycntg {
+        margin:6px 25px 10px 0
+    }
+    #nycp {
+        background-color:#fafafa;
+        border-left:1px solid #ebebeb;
+        bottom:0;
+        left:0;
+        margin-left:33px;
+        min-width:240px;
+        position:absolute;
+        right:0;
+        top:0;
+        visibility:hidden;
+        z-index:102;
+        padding:38px 16px 10px 31px
+    }
+    .nyc_open #nycp {
+        visibility:visible
+    }
+    #nycf {
+        display:none;
+        height:1px;
+        left:0;
+        min-width:940px;
+        position:absolute;
+        visibility:hidden;
+        z-index:-1
+    }
+    .nyc_open #nycf {
+        display:block
+    }
+    .nyc_opening #nycp, .nyc_opening #nycprv {
+        display:block;
+        visibility:hidden!important
+    }
+    #nyccur {
+        background:#fafafa;
+        height:100%;
+        left:33px;
+        opacity:0;
+        position:absolute;
+        top:0;
+        width:0;
+        z-index:120
+    }
+    #nyccur.wipeRight {
+        border-right:1px solid #e8e8e8;
+        opacity:1;
+        -webkit-transition:width 0.08s ease-in;
+        width:100%
+    }
+    #nyccur.fadeOut {
+        opacity:0;
+        -webkit-transition:opacity 0.08s linear;
+        width:100%
+    }
+    #nyccur.fadeIn {
+        opacity:1;
+        -webkit-transition:opacity 0.08s linear;
+        width:100%
+    }
+    #nyccur.wipeLeft {
+        border-right:1px solid #eee;
+        opacity:1;
+        -webkit-transition:width 0.08s ease-out;
+        width:0
+    }
+    .nyc_open .vspib, .nyc_opening .vspib {
+        padding-right:0;
+        -webkit-transition:padding-right .2s ease
+    }
+    .nyc_open .vspib .vspii, .nyc_opening .vspib .vspii {
+        -webkit-border-top-right-radius:0;
+        -webkit-border-bottom-right-radius:0;
+        border-right:none
+    }
+    .nyc_open #nycxh {
+        cursor:pointer;
+        opacity:0.7;
+        padding:15px;
+        position:absolute;
+        right:1px;
+        top:12px
+    }
+    .nyc_open #nycxh:hover {
+        opacity:1
+    }
+    #nycx {
+        display:none
+    }
+    .nyc_open #nycx {
+        border:none;
+        cursor:pointer;
+        display:block;
+        padding:0
+    }
+    #nycntg h3 .esw {
+        display:none
+    }
+    #nyc .vshid {
+        display:inline
+    }
+    #nyc #nycntg .vshid a {
+        white-space:nowrap
+    }
+    #nycntg a:link {
+        border:0;
+        text-decoration:none
+    }
+    #nycntg a:hover {
+        text-decoration:underline
+    }
+    #vsi, .vsi {
+        border:none;
+        width:100%
+    }
+    .vslru.vso:before {
+        bottom:-8px;
+        top:-7px;
+        left:-7px;
+        right:-9px;
+        content:"";
+        position:absolute;
+        z-index:-1
+    }
+    .vslru div.vspib {
+        bottom:-6px;
+        top:-7px
+    }
+    .vslru div.vspib .vspii {
+        border-radius:0
+    }
+    .vscl.vso.vslru:before, .vscl.vslru div.vspib {
+        top:-4px
+    }
+    </style>
+</body>

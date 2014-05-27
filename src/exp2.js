@@ -355,6 +355,9 @@ function dowork(str){
 		}
 	};
 	var hrefs = parser.visit(r,null,findAvisitor);
+	//此时hrefs中是全部的href属性值，baseHref属性是文档的base，
+	//你应该将这两者结合，生成绝对路径的数组，存放在hrefs内
+	//throw "将该throw语句替换为你的代码：行号290";
     if (!baseHref) baseHref = 'http://foo.com/folder';
     while (baseHref.length > 0 && baseHref[baseHref.length - 1] == '/') {
         baseHref = baseHref.slice(0, baseHref.length - 1);
@@ -362,22 +365,29 @@ function dowork(str){
     var basedirminlen = /:/.exec(baseHref) != null ? 3 : 1;
     var basedirs = baseHref.split('/');
     for (var i in hrefs) {
-        if (/:/.exec(hrefs[i]) != null) {
-            continue;
-        }
-        var dirs = hrefs[i].split('/'), tdirs, j = 0;
-        if (dirs[0] == '') {
-            tdirs = basedirs.slice(0, basedirminlen);
-            j = 1;
+        var dirs = hrefs[i].split('/'), tdirs, j = 0, minlen;
+        if (/[^:\/]+:/.exec(hrefs[i]) != null) {
+            if (/[^:\/]+:\/\//.exec(hrefs[i]) != null) {
+                minlen = 3;
+            } else {
+                minlen = 1;
+            }
+            tdirs = [];
         } else {
-            tdirs = basedirs.slice();
+            minlen = basedirminlen;
+            if (dirs[0] == '') {
+                tdirs = basedirs.slice(0, basedirminlen);
+                j = 1;
+            } else {
+                tdirs = basedirs.slice();
+            }
         }
         for (var tlen = dirs.length; j < tlen; ++j) {
             switch (dirs[j]) {
                 case '.':
                     break;
                 case '..':
-                    if (tdirs.length > basedirminlen) {
+                    if (tdirs.length > minlen) {
                         tdirs.pop();
                     }
                     break;
@@ -388,9 +398,6 @@ function dowork(str){
         }
         hrefs[i] = tdirs.join('/');
     }
-	//此时hrefs中是全部的href属性值，baseHref属性是文档的base，
-	//你应该将这两者结合，生成绝对路径的数组，存放在hrefs内
-	//throw "将该throw语句替换为你的代码：行号290";
 	return hrefs;
 }
 
